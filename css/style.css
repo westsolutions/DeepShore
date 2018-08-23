@@ -196,16 +196,10 @@ body {
 
 /* line 171, ../scss/style.scss */
 .icon {
-  border: 1px solid green;
   margin-top: 28px;
 }
 
 /* line 176, ../scss/style.scss */
-.icons-block {
-  border: 1px solid green;
-  width: 20%;
-}
-/* line 179, ../scss/style.scss */
 .icons-block .img-block {
   height: 100px;
   width: 100px;
@@ -213,11 +207,17 @@ body {
   border: 1px solid grey;
   margin: 0 auto;
 }
-/* line 186, ../scss/style.scss */
+/* line 183, ../scss/style.scss */
 .icons-block h4 {
   color: #000000;
   font-size: 12px;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+/* line 192, ../scss/style.scss */
+.content-bg {
+  padding: 72px 0;
+  background: linear-gradient(90deg, #ffffff 340px, #d02323 340.1px, #d02323 10000px);
 }

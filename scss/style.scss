@@ -169,19 +169,16 @@ body{
 }
 
 .icon{
-    border:1px solid green;
     margin-top:28px;
 }
 
 .icons-block{
-    border:1px solid green;
-    width: 20%;
     .img-block{
         height: 100px;
         width: 100px;
         border-radius: 50%;
         border:1px solid grey;
-        margin: 0 auto;
+        margin:0 auto;
     }
     h4{
         color: #000000;
@@ -190,6 +187,11 @@ body{
         text-transform: uppercase;
         letter-spacing: 2px;
     }
+}
+
+.content-bg{
+    padding:72px 0;
+    background: linear-gradient(90deg, #ffffff  340px, #d02323 340.1px ,  #d02323 10000px);
 }
 
 
