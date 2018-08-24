@@ -1,0 +1,40 @@
+@import "_variables.scss";
+
+.section-items{
+    h2{
+        text-transform: uppercase;
+    }
+}
+
+.items{
+    margin-bottom: 55px;
+    border: 1px solid #dddddd;
+    img{
+        width:100%;
+    }
+    h3{
+        color: #000000;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding-top: 28px;
+    }
+    p{
+        color: #4a4a4a;
+        font-size: 10px;
+        line-height: 18px;
+    }
+    
+    .items-btn{
+        color: #d02323;
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        border:1px solid #e89191;
+        padding:10px 20px;
+        border-radius: 25px;
+        margin:40px 0;
+    }
+}

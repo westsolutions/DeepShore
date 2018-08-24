@@ -4,8 +4,11 @@ body{
 
 @import "_header.scss";
 @import "_hero.scss";
-@import "section-content.scss";
+@import "_section-content.scss";
 @import "_icons.scss";
+@import "_content-bg.scss";
+@import "_section-items.scss";
+@import "_section-bg.scss";
 
 
 .content-bg{
@@ -45,43 +48,6 @@ body{
         border:1px solid #ffffff;
         border-radius:25px;
         margin:22px 0;
-    }
-}
-
-.section-items{
-    h2{
-        text-transform: uppercase;
-    }
-}
-
-.items{
-    margin-bottom: 55px;
-    border: 1px solid #dddddd;
-    h3{
-        color: #000000;
-        font-size: 12px;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        padding-top: 28px;
-    }
-    p{
-        color: #4a4a4a;
-        font-size: 10px;
-        line-height: 18px;
-    }
-    
-    .items-btn{
-        color: #d02323;
-        font-family: Montserrat;
-        font-size: 12px;
-        font-weight: 500;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        border:1px solid #e89191;
-        padding:10px 20px;
-        border-radius: 25px;
-        margin:40px 0;
     }
 }
 

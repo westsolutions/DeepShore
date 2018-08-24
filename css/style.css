@@ -114,6 +114,7 @@ body {
 /* line 95, ../scss/_header.scss */
 .menu-btn a {
   color: #ffffff !important;
+  text-decoration: none !important;
 }
 
 /* line 3, ../scss/_hero.scss */
@@ -162,7 +163,7 @@ body {
 /* line 3, ../scss/_section-content.scss */
 .section-title {
   color: #000000;
-  font-size: font-size-h2-titel;
+  font-size: 32px;
   font-weight: 400;
   margin-bottom: 30px;
 }
@@ -184,7 +185,7 @@ body {
 /* line 21, ../scss/_section-content.scss */
 .section-content .section-text {
   color: #4a4a4a;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 24px;
 }
 /* line 26, ../scss/_section-content.scss */
@@ -231,25 +232,67 @@ body {
   margin: 30px 0;
 }
 
-/* line 11, ../scss/style.scss */
+/* line 4, ../scss/_section-items.scss */
+.section-items h2 {
+  text-transform: uppercase;
+}
+
+/* line 9, ../scss/_section-items.scss */
+.items {
+  margin-bottom: 55px;
+  border: 1px solid #dddddd;
+}
+/* line 12, ../scss/_section-items.scss */
+.items img {
+  width: 100%;
+}
+/* line 15, ../scss/_section-items.scss */
+.items h3 {
+  color: #000000;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-top: 28px;
+}
+/* line 23, ../scss/_section-items.scss */
+.items p {
+  color: #4a4a4a;
+  font-size: 10px;
+  line-height: 18px;
+}
+/* line 29, ../scss/_section-items.scss */
+.items .items-btn {
+  color: #d02323;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 1px solid #e89191;
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin: 40px 0;
+}
+
+/* line 14, ../scss/style.scss */
 .content-bg {
   margin: 50px 0;
   padding: 72px 0;
   background: linear-gradient(90deg, #ffffff 45%, #d02323 45.1%, #d02323 10000px);
   position: relative;
 }
-/* line 17, ../scss/style.scss */
+/* line 20, ../scss/style.scss */
 .content-bg img {
   width: 50%;
   display: block;
 }
 
-/* line 23, ../scss/style.scss */
+/* line 26, ../scss/style.scss */
 .block-text {
   width: 50%;
   padding-left: 55px;
 }
-/* line 26, ../scss/style.scss */
+/* line 29, ../scss/style.scss */
 .block-text h2 {
   font-size: 20px;
   font-weight: 700;
@@ -257,13 +300,13 @@ body {
   color: #ffffff;
   margin: 27px 0;
 }
-/* line 33, ../scss/style.scss */
+/* line 36, ../scss/style.scss */
 .block-text p {
   color: #ffffff;
   font-size: 10px;
   line-height: 18px;
 }
-/* line 38, ../scss/style.scss */
+/* line 41, ../scss/style.scss */
 .block-text .block-text-btn {
   color: #ffffff;
   font-size: 12px;
@@ -276,78 +319,39 @@ body {
   margin: 22px 0;
 }
 
-/* line 52, ../scss/style.scss */
-.section-items h2 {
-  text-transform: uppercase;
-}
-
-/* line 57, ../scss/style.scss */
-.items {
-  margin-bottom: 55px;
-  border: 1px solid #dddddd;
-}
-/* line 60, ../scss/style.scss */
-.items h3 {
-  color: #000000;
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  padding-top: 28px;
-}
-/* line 68, ../scss/style.scss */
-.items p {
-  color: #4a4a4a;
-  font-size: 10px;
-  line-height: 18px;
-}
-/* line 74, ../scss/style.scss */
-.items .items-btn {
-  color: #d02323;
-  font-family: Montserrat;
-  font-size: 12px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  border: 1px solid #e89191;
-  padding: 10px 20px;
-  border-radius: 25px;
-  margin: 40px 0;
-}
-
-/* line 88, ../scss/style.scss */
+/* line 54, ../scss/style.scss */
 .section-block {
   max-width: 700px;
   margin: 0 auto;
 }
-/* line 91, ../scss/style.scss */
+/* line 57, ../scss/style.scss */
 .section-block img {
   border-bottom: 3px solid #d02323;
   margin-bottom: 50px;
 }
 
-/* line 98, ../scss/style.scss */
+/* line 64, ../scss/style.scss */
 .section-block-text h2 {
   color: #d02323;
   font-size: 32px;
   font-weight: 400;
   line-height: 50px;
 }
-/* line 104, ../scss/style.scss */
+/* line 70, ../scss/style.scss */
 .section-block-text p {
   color: #4a4a4a;
   font-size: 12px;
   line-height: 24px;
 }
 
-/* line 111, ../scss/style.scss */
+/* line 77, ../scss/style.scss */
 .block-items-text {
   padding: 0 0 30px 25px;
   margin-left: 15px;
   position: relative;
   min-height: 114px;
 }
-/* line 116, ../scss/style.scss */
+/* line 82, ../scss/style.scss */
 .block-items-text .items-number {
   position: absolute;
   left: -20px;
@@ -362,7 +366,7 @@ body {
   text-align: center;
   background-color: #ffffff;
 }
-/* line 130, ../scss/style.scss */
+/* line 96, ../scss/style.scss */
 .block-items-text h3 {
   color: #000000;
   font-size: 20px;
@@ -370,24 +374,24 @@ body {
   text-transform: uppercase;
   letter-spacing: 3.33px;
 }
-/* line 137, ../scss/style.scss */
+/* line 103, ../scss/style.scss */
 .block-items-text p {
   color: #000000;
   font-size: 10px;
   line-height: 18px;
 }
 
-/* line 144, ../scss/style.scss */
+/* line 110, ../scss/style.scss */
 .border-items {
   border-left: 1px dashed #d02323;
 }
 
-/* line 148, ../scss/style.scss */
+/* line 114, ../scss/style.scss */
 .section-bg {
   background: linear-gradient(90deg, #f7f7f7 40%, #ffffff 40.01%, #ffffff 10000px);
   padding: 72px 0;
 }
-/* line 151, ../scss/style.scss */
+/* line 117, ../scss/style.scss */
 .section-bg img {
   max-width: 104px;
   max-height: 104px;
@@ -395,7 +399,7 @@ body {
   margin-bottom: 20px;
 }
 
-/* line 160, ../scss/style.scss */
+/* line 126, ../scss/style.scss */
 .author-text h3 {
   color: #d02323;
   font-size: 12px;
@@ -403,7 +407,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 2.67px;
 }
-/* line 167, ../scss/style.scss */
+/* line 133, ../scss/style.scss */
 .author-text p {
   color: #000000;
   font-size: 32px;
@@ -411,13 +415,13 @@ body {
   font-weight: 400;
 }
 
-/* line 175, ../scss/style.scss */
+/* line 141, ../scss/style.scss */
 .author-bottom {
   border-top: 1px solid #d02323;
   position: relative;
   margin-top: 20px;
 }
-/* line 179, ../scss/style.scss */
+/* line 145, ../scss/style.scss */
 .author-bottom::after {
   content: "";
   display: block;
@@ -428,7 +432,7 @@ body {
   top: -1px;
 }
 
-/* line 191, ../scss/style.scss */
+/* line 157, ../scss/style.scss */
 .author-name {
   color: #000000;
   font-size: 16px;
@@ -436,7 +440,7 @@ body {
   font-weight: 700;
   letter-spacing: 2.67px;
 }
-/* line 197, ../scss/style.scss */
+/* line 163, ../scss/style.scss */
 .author-name .data {
   font-weight: 500;
   letter-spacing: 3.56px;
@@ -444,7 +448,7 @@ body {
   padding-left: 5px;
 }
 
-/* line 206, ../scss/style.scss */
+/* line 172, ../scss/style.scss */
 .button-block .button {
   width: 40px;
   height: 40px;
@@ -453,11 +457,11 @@ body {
   margin-right: 19px;
 }
 
-/* line 215, ../scss/style.scss */
+/* line 181, ../scss/style.scss */
 footer {
   color: #ffffff;
 }
-/* line 217, ../scss/style.scss */
+/* line 183, ../scss/style.scss */
 footer .name-block {
   font-size: 12px;
   font-weight: 700;
@@ -466,37 +470,37 @@ footer .name-block {
   margin-bottom: 23px !important;
 }
 
-/* line 226, ../scss/style.scss */
+/* line 192, ../scss/style.scss */
 .footer-location {
   background-color: #202020;
   padding-bottom: 32px;
 }
-/* line 229, ../scss/style.scss */
+/* line 195, ../scss/style.scss */
 .footer-location img {
   display: block;
   width: 12px;
   height: 9px;
   margin: 0 auto;
 }
-/* line 235, ../scss/style.scss */
+/* line 201, ../scss/style.scss */
 .footer-location .coordinates,
 .footer-location a {
   color: #ffffff;
   font-size: 10px;
   line-height: 18px;
 }
-/* line 240, ../scss/style.scss */
+/* line 206, ../scss/style.scss */
 .footer-location .coordinates:hover,
 .footer-location a:hover {
   color: #ffffff;
 }
 
-/* line 246, ../scss/style.scss */
+/* line 212, ../scss/style.scss */
 .footer-contact {
   background-color: #d02323;
   padding: 0 60px;
 }
-/* line 249, ../scss/style.scss */
+/* line 215, ../scss/style.scss */
 .footer-contact input,
 .footer-contact textarea {
   background-color: transparent;
@@ -508,7 +512,7 @@ footer .name-block {
   font-size: 10px;
   line-height: 18px;
 }
-/* line 260, ../scss/style.scss */
+/* line 226, ../scss/style.scss */
 .footer-contact .footer-btn {
   color: #ffffff;
   font-size: 15px;
@@ -522,19 +526,19 @@ footer .name-block {
   margin-top: 23px;
 }
 
-/* line 275, ../scss/style.scss */
+/* line 241, ../scss/style.scss */
 .footer-map,
 .footer-contact,
 .footer-location {
   min-height: 456px;
 }
 
-/* line 281, ../scss/style.scss */
+/* line 247, ../scss/style.scss */
 .footer-bottom {
   background-color: #000000;
   padding: 10px 0;
 }
-/* line 284, ../scss/style.scss */
+/* line 250, ../scss/style.scss */
 .footer-bottom p,
 .footer-bottom a {
   font-size: 9px;
@@ -542,7 +546,7 @@ footer .name-block {
   font-weight: 700;
   margin: 0;
 }
-/* line 291, ../scss/style.scss */
+/* line 257, ../scss/style.scss */
 .footer-bottom .web {
   font-weight: 500;
   color: #ffffff;
