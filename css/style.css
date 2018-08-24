@@ -3,53 +3,50 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-/* line 5, ../scss/style.scss */
+/* line 4, ../scss/_header.scss */
 .main-heade-info {
-  padding: 4px 72px;
+  padding: 12px 0;
   background-color: #000000;
   font-size: 12px;
   color: #ffffff;
 }
-/* line 10, ../scss/style.scss */
-.main-heade-info .language {
-  padding: 8px 0;
+/* line 9, ../scss/_header.scss */
+.main-heade-info a {
+  color: #ffffff;
+  padding: 0 5px;
+}
+/* line 12, ../scss/_header.scss */
+.main-heade-info a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+/* line 18, ../scss/_header.scss */
+.main-heade-info li:first-child::after {
+  content: "/";
+  display: block;
+  color: #d02323;
 }
 
-/* line 16, ../scss/style.scss */
-.phone-mail a {
-  color: #ffffff;
-  padding: 8px 5px;
-}
-/* line 19, ../scss/style.scss */
-.phone-mail a:hover {
-  color: #ffffff;
-}
-/* line 23, ../scss/style.scss */
-.phone-mail li span {
-  color: #8b1717;
-  padding: 8px 0;
-}
-
-/* line 29, ../scss/style.scss */
+/* line 26, ../scss/_header.scss */
 .main-heade {
-  padding: 15px 72px;
+  padding: 15px 0;
 }
-/* line 31, ../scss/style.scss */
+/* line 28, ../scss/_header.scss */
 .main-heade .img-logo {
   max-width: 187px;
 }
 
-/* line 36, ../scss/style.scss */
+/* line 33, ../scss/_header.scss */
 .main-header-menu {
   margin: 0;
   padding: 12px 0;
 }
-/* line 39, ../scss/style.scss */
+/* line 36, ../scss/_header.scss */
 .main-header-menu li {
   list-style-type: none;
   position: relative;
 }
-/* line 42, ../scss/style.scss */
+/* line 39, ../scss/_header.scss */
 .main-header-menu li a {
   cursor: pointer;
   color: #d12626;
@@ -59,59 +56,67 @@ body {
   display: block;
   padding: 9px 16px;
 }
-/* line 50, ../scss/style.scss */
+/* line 47, ../scss/_header.scss */
 .main-header-menu li a:hover {
   color: #000000;
 }
-/* line 54, ../scss/style.scss */
+/* line 51, ../scss/_header.scss */
 .main-header-menu li:hover .menu-sub {
   display: block;
 }
 
-/* line 62, ../scss/style.scss */
+/* line 57, ../scss/_header.scss */
 .menu-sub {
   display: none;
-  padding: 0;
   position: absolute;
   width: 212px;
-  border-top: 1px solid #d02323;
   left: -60px;
-  top: 50px;
+  top: 27px;
+  padding: 15px 0 0 0;
   z-index: 100;
   background-color: #ffffff;
 }
-/* line 72, ../scss/style.scss */
+/* line 66, ../scss/_header.scss */
 .menu-sub li:first-of-type {
-  border-top: 2px solid #d02323;
+  position: relative;
 }
-/* line 75, ../scss/style.scss */
+/* line 68, ../scss/_header.scss */
+.menu-sub li:first-of-type::before {
+  content: ' ';
+  width: 212px;
+  left: -14px;
+  border-top: 2px solid #d02323;
+  position: absolute;
+}
+/* line 76, ../scss/_header.scss */
 .menu-sub li:last-of-type {
   border: 2px solid transparent;
 }
-/* line 78, ../scss/style.scss */
+/* line 79, ../scss/_header.scss */
 .menu-sub li {
   text-align: center;
   padding: 0;
+  margin: 0 14px;
   border-bottom: 2px solid #efefef;
 }
-/* line 82, ../scss/style.scss */
+/* line 84, ../scss/_header.scss */
 .menu-sub li a {
   color: #000000;
   text-transform: none;
 }
 
-/* line 89, ../scss/style.scss */
+/* line 91, ../scss/_header.scss */
 .menu-btn {
-  background-color: #d02323;
+  background-color: #D02323;
   border-radius: 25px;
   padding: 0 20px;
 }
-/* line 93, ../scss/style.scss */
+/* line 95, ../scss/_header.scss */
 .menu-btn a {
   color: #ffffff !important;
 }
 
-/* line 98, ../scss/style.scss */
+/* line 3, ../scss/_hero.scss */
 .hero {
   min-height: 500px;
   background-repeat: no-repeat;
@@ -120,51 +125,48 @@ body {
   position: relative;
 }
 
-/* line 106, ../scss/style.scss */
+/* line 12, ../scss/_hero.scss */
+.hero-text .hero-sub-title {
+  color: #baeaff;
+  font-size: 22px;
+  font-weight: 500;
+}
+/* line 17, ../scss/_hero.scss */
+.hero-text .hero-title {
+  text-shadow: 4px 4px 9px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+
+/* line 27, ../scss/_hero.scss */
 .bottom-banner-triangles {
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 100px;
 }
-/* line 111, ../scss/style.scss */
+/* line 32, ../scss/_hero.scss */
 .bottom-banner-triangles .left {
   width: 50%;
-  height: 100px;
-  background: linear-gradient(3deg, #ffffff 50%, red 51%, transparent 52%, transparent 100%);
+  background: linear-gradient(6deg, #ffffff 50%, red 51%, transparent 52%, transparent 100%);
 }
-/* line 116, ../scss/style.scss */
+/* line 36, ../scss/_hero.scss */
 .bottom-banner-triangles .right {
   width: 50%;
-  background: linear-gradient(-3deg, #ffffff 50%, red 51%, transparent 52%, transparent 100%);
+  background: linear-gradient(-6deg, #ffffff 50%, red 51%, transparent 52%, transparent 100%);
 }
 
-/* line 123, ../scss/style.scss */
-.hero-text .hero-text {
-  color: #baeaff;
-  font-family: "Gotham Medium";
-  font-size: 22px;
-  font-weight: 500;
-}
-/* line 129, ../scss/style.scss */
-.hero-text .hero-title {
-  text-shadow: 4px 4px 9px rgba(0, 0, 0, 0.5);
-  color: #ffffff;
-  font-family: Montserrat;
-  font-size: 50px;
-  font-weight: 700;
-  line-height: 60px;
-  text-transform: uppercase;
-}
-
-/* line 139, ../scss/style.scss */
+/* line 3, ../scss/_section-content.scss */
 .section-title {
   color: #000000;
-  font-size: 32px;
+  font-size: font-size-h2-titel;
   font-weight: 400;
   margin-bottom: 30px;
 }
-/* line 144, ../scss/style.scss */
+/* line 8, ../scss/_section-content.scss */
 .section-title::after {
   content: '';
   display: block;
@@ -175,21 +177,21 @@ body {
   margin-top: 12px;
 }
 
-/* line 155, ../scss/style.scss */
+/* line 19, ../scss/_section-content.scss */
 .section-content {
   border-bottom: 3px dotted #dddddd;
 }
-/* line 157, ../scss/style.scss */
+/* line 21, ../scss/_section-content.scss */
 .section-content .section-text {
   color: #4a4a4a;
   font-size: 15px;
   line-height: 24px;
 }
-/* line 162, ../scss/style.scss */
+/* line 26, ../scss/_section-content.scss */
 .section-content .section-content-button {
   margin-bottom: -28px;
   border-radius: 25px;
-  background-color: #d02323;
+  background-color: #D02323;
   color: #ffffff;
   padding: 15px 30px;
   font-size: 16px;
@@ -198,53 +200,56 @@ body {
   letter-spacing: 2.67px;
 }
 
-/* line 175, ../scss/style.scss */
+/* line 3, ../scss/_icons.scss */
 .icon {
   margin-top: 28px;
   padding-top: 58px;
 }
 
-/* line 180, ../scss/style.scss */
+/* line 8, ../scss/_icons.scss */
 .icons-block {
   padding: 0 15px;
 }
-/* line 183, ../scss/style.scss */
+/* line 10, ../scss/_icons.scss */
 .icons-block .img-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100px;
   width: 100px;
   border-radius: 50%;
   border: 1px solid grey;
   margin: 0 auto;
 }
-/* line 190, ../scss/style.scss */
+/* line 20, ../scss/_icons.scss */
 .icons-block h4 {
   color: #000000;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 30px 0;
 }
 
-/* line 200, ../scss/style.scss */
+/* line 11, ../scss/style.scss */
 .content-bg {
   margin: 50px 0;
   padding: 72px 0;
   background: linear-gradient(90deg, #ffffff 45%, #d02323 45.1%, #d02323 10000px);
   position: relative;
 }
-/* line 206, ../scss/style.scss */
+/* line 17, ../scss/style.scss */
 .content-bg img {
   width: 50%;
   display: block;
 }
 
-/* line 212, ../scss/style.scss */
+/* line 23, ../scss/style.scss */
 .block-text {
   width: 50%;
   padding-left: 55px;
 }
-/* line 215, ../scss/style.scss */
+/* line 26, ../scss/style.scss */
 .block-text h2 {
   font-size: 20px;
   font-weight: 700;
@@ -252,13 +257,13 @@ body {
   color: #ffffff;
   margin: 27px 0;
 }
-/* line 222, ../scss/style.scss */
+/* line 33, ../scss/style.scss */
 .block-text p {
   color: #ffffff;
   font-size: 10px;
   line-height: 18px;
 }
-/* line 227, ../scss/style.scss */
+/* line 38, ../scss/style.scss */
 .block-text .block-text-btn {
   color: #ffffff;
   font-size: 12px;
@@ -271,17 +276,17 @@ body {
   margin: 22px 0;
 }
 
-/* line 241, ../scss/style.scss */
+/* line 52, ../scss/style.scss */
 .section-items h2 {
   text-transform: uppercase;
 }
 
-/* line 246, ../scss/style.scss */
+/* line 57, ../scss/style.scss */
 .items {
   margin-bottom: 55px;
   border: 1px solid #dddddd;
 }
-/* line 249, ../scss/style.scss */
+/* line 60, ../scss/style.scss */
 .items h3 {
   color: #000000;
   font-size: 12px;
@@ -290,13 +295,13 @@ body {
   letter-spacing: 2px;
   padding-top: 28px;
 }
-/* line 257, ../scss/style.scss */
+/* line 68, ../scss/style.scss */
 .items p {
   color: #4a4a4a;
   font-size: 10px;
   line-height: 18px;
 }
-/* line 263, ../scss/style.scss */
+/* line 74, ../scss/style.scss */
 .items .items-btn {
   color: #d02323;
   font-family: Montserrat;
@@ -310,39 +315,39 @@ body {
   margin: 40px 0;
 }
 
-/* line 277, ../scss/style.scss */
+/* line 88, ../scss/style.scss */
 .section-block {
   max-width: 700px;
   margin: 0 auto;
 }
-/* line 280, ../scss/style.scss */
+/* line 91, ../scss/style.scss */
 .section-block img {
   border-bottom: 3px solid #d02323;
   margin-bottom: 50px;
 }
 
-/* line 287, ../scss/style.scss */
+/* line 98, ../scss/style.scss */
 .section-block-text h2 {
   color: #d02323;
   font-size: 32px;
   font-weight: 400;
   line-height: 50px;
 }
-/* line 293, ../scss/style.scss */
+/* line 104, ../scss/style.scss */
 .section-block-text p {
   color: #4a4a4a;
   font-size: 12px;
   line-height: 24px;
 }
 
-/* line 300, ../scss/style.scss */
+/* line 111, ../scss/style.scss */
 .block-items-text {
   padding: 0 0 30px 25px;
   margin-left: 15px;
   position: relative;
   min-height: 114px;
 }
-/* line 305, ../scss/style.scss */
+/* line 116, ../scss/style.scss */
 .block-items-text .items-number {
   position: absolute;
   left: -20px;
@@ -357,7 +362,7 @@ body {
   text-align: center;
   background-color: #ffffff;
 }
-/* line 319, ../scss/style.scss */
+/* line 130, ../scss/style.scss */
 .block-items-text h3 {
   color: #000000;
   font-size: 20px;
@@ -365,24 +370,24 @@ body {
   text-transform: uppercase;
   letter-spacing: 3.33px;
 }
-/* line 326, ../scss/style.scss */
+/* line 137, ../scss/style.scss */
 .block-items-text p {
   color: #000000;
   font-size: 10px;
   line-height: 18px;
 }
 
-/* line 333, ../scss/style.scss */
+/* line 144, ../scss/style.scss */
 .border-items {
   border-left: 1px dashed #d02323;
 }
 
-/* line 337, ../scss/style.scss */
+/* line 148, ../scss/style.scss */
 .section-bg {
   background: linear-gradient(90deg, #f7f7f7 40%, #ffffff 40.01%, #ffffff 10000px);
   padding: 72px 0;
 }
-/* line 340, ../scss/style.scss */
+/* line 151, ../scss/style.scss */
 .section-bg img {
   max-width: 104px;
   max-height: 104px;
@@ -390,7 +395,7 @@ body {
   margin-bottom: 20px;
 }
 
-/* line 349, ../scss/style.scss */
+/* line 160, ../scss/style.scss */
 .author-text h3 {
   color: #d02323;
   font-size: 12px;
@@ -398,7 +403,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 2.67px;
 }
-/* line 356, ../scss/style.scss */
+/* line 167, ../scss/style.scss */
 .author-text p {
   color: #000000;
   font-size: 32px;
@@ -406,13 +411,13 @@ body {
   font-weight: 400;
 }
 
-/* line 364, ../scss/style.scss */
+/* line 175, ../scss/style.scss */
 .author-bottom {
   border-top: 1px solid #d02323;
   position: relative;
   margin-top: 20px;
 }
-/* line 368, ../scss/style.scss */
+/* line 179, ../scss/style.scss */
 .author-bottom::after {
   content: "";
   display: block;
@@ -423,7 +428,7 @@ body {
   top: -1px;
 }
 
-/* line 380, ../scss/style.scss */
+/* line 191, ../scss/style.scss */
 .author-name {
   color: #000000;
   font-size: 16px;
@@ -431,7 +436,7 @@ body {
   font-weight: 700;
   letter-spacing: 2.67px;
 }
-/* line 386, ../scss/style.scss */
+/* line 197, ../scss/style.scss */
 .author-name .data {
   font-weight: 500;
   letter-spacing: 3.56px;
@@ -439,7 +444,7 @@ body {
   padding-left: 5px;
 }
 
-/* line 395, ../scss/style.scss */
+/* line 206, ../scss/style.scss */
 .button-block .button {
   width: 40px;
   height: 40px;
@@ -448,11 +453,11 @@ body {
   margin-right: 19px;
 }
 
-/* line 404, ../scss/style.scss */
+/* line 215, ../scss/style.scss */
 footer {
   color: #ffffff;
 }
-/* line 406, ../scss/style.scss */
+/* line 217, ../scss/style.scss */
 footer .name-block {
   font-size: 12px;
   font-weight: 700;
@@ -461,37 +466,37 @@ footer .name-block {
   margin-bottom: 23px !important;
 }
 
-/* line 415, ../scss/style.scss */
+/* line 226, ../scss/style.scss */
 .footer-location {
   background-color: #202020;
   padding-bottom: 32px;
 }
-/* line 418, ../scss/style.scss */
+/* line 229, ../scss/style.scss */
 .footer-location img {
   display: block;
   width: 12px;
   height: 9px;
   margin: 0 auto;
 }
-/* line 424, ../scss/style.scss */
+/* line 235, ../scss/style.scss */
 .footer-location .coordinates,
 .footer-location a {
   color: #ffffff;
   font-size: 10px;
   line-height: 18px;
 }
-/* line 429, ../scss/style.scss */
+/* line 240, ../scss/style.scss */
 .footer-location .coordinates:hover,
 .footer-location a:hover {
   color: #ffffff;
 }
 
-/* line 435, ../scss/style.scss */
+/* line 246, ../scss/style.scss */
 .footer-contact {
   background-color: #d02323;
   padding: 0 60px;
 }
-/* line 438, ../scss/style.scss */
+/* line 249, ../scss/style.scss */
 .footer-contact input,
 .footer-contact textarea {
   background-color: transparent;
@@ -503,7 +508,7 @@ footer .name-block {
   font-size: 10px;
   line-height: 18px;
 }
-/* line 449, ../scss/style.scss */
+/* line 260, ../scss/style.scss */
 .footer-contact .footer-btn {
   color: #ffffff;
   font-size: 15px;
@@ -517,19 +522,19 @@ footer .name-block {
   margin-top: 23px;
 }
 
-/* line 464, ../scss/style.scss */
+/* line 275, ../scss/style.scss */
 .footer-map,
 .footer-contact,
 .footer-location {
   min-height: 456px;
 }
 
-/* line 470, ../scss/style.scss */
+/* line 281, ../scss/style.scss */
 .footer-bottom {
   background-color: #000000;
   padding: 10px 0;
 }
-/* line 473, ../scss/style.scss */
+/* line 284, ../scss/style.scss */
 .footer-bottom p,
 .footer-bottom a {
   font-size: 9px;
@@ -537,7 +542,7 @@ footer .name-block {
   font-weight: 700;
   margin: 0;
 }
-/* line 480, ../scss/style.scss */
+/* line 291, ../scss/style.scss */
 .footer-bottom .web {
   font-weight: 500;
   color: #ffffff;
