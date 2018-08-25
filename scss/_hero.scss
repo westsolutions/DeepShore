@@ -1,17 +1,23 @@
 @import "_variables.scss";
 
 .hero{
-    min-height: 500px;
+    min-height: 31.25rem;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     position: relative;
+    img{
+        position:absolute;
+        bottom: -.375rem;
+        width:100%;
+        min-height: 3.812rem;
+    }
 }
 
 .hero-text{
     .hero-sub-title{
         color: #baeaff;
-        font-size: 22px;
+        font-size: 1.375rem;
         font-weight: 500;
     }
     .hero-title{
@@ -19,23 +25,10 @@
         color: #ffffff;
         font-size: $font-size-h1;
         font-weight: 500;
-        line-height: 60px;
+        line-height: 3.75rem;
         text-transform: uppercase;
     }
 }
 
-.bottom-banner-triangles{
-    position:absolute;
-    bottom: 0;
-    width:100%;
-    height:100px;
-    .left{
-        width: 50%;
-        background: linear-gradient(6deg, #ffffff 50%, red 51%,transparent  52%, transparent 100%);
-    }
-    .right{
-        width:50%;
-        background: linear-gradient(-6deg, #ffffff 50%, red 51%,transparent  52%, transparent 100%);
-    }
-}
+
 

@@ -10,7 +10,7 @@
 </head>
 <body>
     <section>
-        <div class="main-heade-info">
+        <div class="header-info">
             <div class="container">
                 <div class="d-flex justify-content-between">
                     <ul class="nav">
@@ -31,41 +31,64 @@
                 </div>
             </div>
         </div>
-        <header class="main-heade">
+        <header class="header-menu">
             <div class="container">
-                <nav class="d-flex justify-content-between">
-                    <a href="#">
-                        <img src="img/logo.jpg" alt="" class="img-logo">
+                <div class="d-flex justify-content-between">
+                    <a href="/">
+                        <img src="img/logo.jpg" alt="">
                     </a>
-                    <ul class="main-header-menu d-flex">
-                        <li>
-                            <a href="#">about</a>
-                            <ul class="menu-sub">
-                                <li>
-                                    <a href="#">Quisque Id</a>
-                                </li>
-                                <li>
-                                    <a href="#">Tempor Libero</a>
-                                </li>
-                                <li>
-                                    <a href="#">Vivamus Nulla</a>
-                                </li>
-                                <li>
-                                    <a href="#">Augue</a>
-                                </li>
-                                <li>
-                                    <a href="#">Semper</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">services</a>
-                        </li>
-                        <li class="menu-btn">
-                            <a href="#">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
+                    
+                    
+                    <div class="menu-respond d-block d-sm-none">
+                        <button type="button" class="tcon tcon-menu--xcross" aria-label="toggle menu" onclick="openNav()">
+                            <span class="tcon-menu__lines" aria-hidden="true"></span>
+                            <span class="tcon-menu__lines" aria-hidden="true"></span>
+                            <span class="tcon-menu__lines" aria-hidden="true"></span>
+                            <span class="tcon-menu__lines tcon-menu__lines--half" aria-hidden="true"></span>
+                            <span class="tcon-visuallyhidden">toggle menu</span>
+                        </button>
+                    </div>
+                    
+                    
+                    <nav class="d-sm-block d-none">
+                        <ul class="header-menu-block d-flex">
+                            <li>
+                                <a href="#">about</a>
+                                <ul class="menu-sub">
+                                    <li>
+                                        <a href="#">Quisque Id</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Tempor Libero</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Vivamus Nulla</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Augue</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Semper</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">services</a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-danger  btn-sm">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    
+                    <div id="mySidenav" class="sidenav">
+                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                      <a href="#">About</a>
+                      <a href="#">Services</a>
+                      <a href="#">Contact</a>
+                    </div>
+                    
+                </div>
             </div>
         </header>
     </section>
@@ -80,10 +103,7 @@
                 </h1>
             </div>   
         </div>
-        <div class="bottom-banner-triangles d-flex">
-            <div class="left"></div>
-            <div class="right"></div>
-        </div>
+        <img src="img/image.svg" alt="">
     </section>
     <section class="section-content">
         <div class="container text-center">
@@ -93,7 +113,7 @@
             <p class="section-text">
                 Deep Shore Marine Contracting offers quality marine construction and erosion control solutions employing water access to residential and commercial clients throughout the Ottawa and Eastern Ontario region. With our specialized equipment and over 25 years of experience we can undertake marine construction and erosion control projects both large and small. Our comprehensive services also include septic system installations, general excavation and landscaping. We take pride in completing our projects in a timely and environmentally responsible manner.
             </p>
-            <a class="btn section-content-button" href="#">Learn more</a>
+            <a class="btn btn-danger btn-xl section-content-button" href="#">Learn more</a>
         </div>
     </section>
     <section class="icon">
@@ -156,7 +176,7 @@
                     <p>
                         Ut enim neque, sagittis non nisi et, aliquet cursus ligula. Cras commodo ligula mi, at fermentum est sagittis nec. Phasellus mattis lacus a tristique vulputate. Nulla posuere, ligula ac suscipit rhoncus, leo justo egestas nunc, sed fringilla metus nisl porttitor ex. Fusce ac dolor sit amet urna placerat pretium vel accumsan ipsum. 
                     </p>
-                    <a class="btn block-text-btn" href="#">
+                    <a class="btn btn-lg btn-outline-white block-text-btn btn-h-1" href="#">
                         Learn more
                     </a>
                 </div>    
@@ -172,7 +192,7 @@
                         <img src="img/dock.png" alt="">
                         <h3>Nulla pharetra</h3>
                         <p>Sed finibus molestie sem, eu molestie ipsum imperdiet consequat. Maecenas purus velit.</p>
-                        <a class="btn items-btn" href="#">
+                        <a class="btn btn-lg items-btn btn-h-2" href="#">
                             Learn more
                         </a>
                     </div>
@@ -182,7 +202,7 @@
                         <img src="img/erosion.png" alt="">
                         <h3>Nulla pharetra</h3>
                         <p>Sed finibus molestie sem, eu molestie ipsum imperdiet consequat. Maecenas purus velit.</p>
-                        <a class="btn items-btn" href="#">
+                        <a class="btn btn-lg items-btn btn-h-2" href="#">
                             Learn more
                         </a>
                     </div>
@@ -192,7 +212,7 @@
                         <img src="img/boathouse.png" alt="">
                         <h3>Nulla pharetra</h3>
                         <p>Sed finibus molestie sem, eu molestie ipsum imperdiet consequat. Maecenas purus velit.</p>
-                        <a class="btn items-btn" href="#">
+                        <a class="btn btn-lg items-btn btn-h-2" href="#">
                             Learn more
                         </a>
                     </div>
@@ -202,7 +222,7 @@
                         <img src="img/septic.png" alt="">
                         <h3>Nulla pharetra</h3>
                         <p>Sed finibus molestie sem, eu molestie ipsum imperdiet consequat. Maecenas purus velit.</p>
-                        <a class="btn items-btn" href="#">
+                        <a class="btn btn-lg items-btn btn-h-2" href="#">
                             Learn more
                         </a>
                     </div>
@@ -212,7 +232,7 @@
                         <img src="img/excavation.png" alt="">
                         <h3>Nulla pharetra</h3>
                         <p>Sed finibus molestie sem, eu molestie ipsum imperdiet consequat. Maecenas purus velit.</p>
-                        <a class="btn items-btn" href="#">
+                        <a class="btn btn-lg items-btn btn-h-2" href="#">
                             Learn more
                         </a>
                     </div>
@@ -222,7 +242,7 @@
                         <img src="img/landscape.png" alt="">
                         <h3>Nulla pharetra</h3>
                         <p>Sed finibus molestie sem, eu molestie ipsum imperdiet consequat. Maecenas purus velit.</p>
-                        <a class="btn items-btn" href="#">
+                        <a class="btn btn-lg items-btn btn-h-2" href="#">
                             Learn more
                         </a>
                     </div>
@@ -396,5 +416,8 @@
             </a>
         </div>
     </footer>
+    
+    
+    <script src="js/js.js"></script>
 </body>
 </html>
