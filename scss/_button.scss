@@ -1,5 +1,7 @@
 .btn{
     text-transform: uppercase;
+    font-family: $font-family-Montserrat;
+    font-weight: 700;
     color:$primary-color;
     border:1px solid $primary-color !important;
     border-radius: 6rem !important;
@@ -22,7 +24,7 @@
         color:#ffffff;
     }
     &.btn-sm{
-        font-size: 1rem;
+        font-size: 0.625rem;
         padding: .562rem 1rem ;
     }
     &.btn-lg{

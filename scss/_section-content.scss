@@ -1,29 +1,32 @@
-@import "_variables.scss";
-
 .section-title{
     color: #000000;
-    font-size: 32px;
+    font-size: $font-size-h2-titel;
     font-weight: 400;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
+    font-family: $font-family-Montserrat;
     &::after{
         content:'';
         display:block;
         height:1px;
-        width:30px;
+        width:1.875rem;
         background-color:#f72727;
         margin:0 auto;
-        margin-top: 12px;
+        margin-top: .75rem;
     }
 }
 
 .section-content{
     border-bottom: 3px dotted #dddddd;
+    .container{
+        max-width: 55rem;
+    }
     .section-text{
-        color: #4a4a4a;
+        color: $font-color-grey;
+        font-family:$font-family-Open-Sans; 
         font-size: $font-size-content;
-        line-height: 24px;
+        line-height: 1.5rem;
     }
     .section-content-button{
-        margin-bottom:-28px;
+        margin-bottom:-1.75rem;
     }
 }
