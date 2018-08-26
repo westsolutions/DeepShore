@@ -1,18 +1,11 @@
 .mobile-burger {
-  height: 40px;
-  width: 40px;
-  padding: 10px 8px;
-  position: absolute;
-  top: 15px;
-  right: 15px;
     background-color: #ffffff;
-    border: 2px solid gold;
-    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
 }
 
 .burger-bar {
   display: block;
-  width: 25px;
   height: 2px;
   margin-bottom: 4px;
   background: $primary-color;
@@ -25,56 +18,6 @@
   }
 }
 
-.menu-respond.respond_fixed{
-	position: fixed;
-	background: rgba(0,0,0,0.6);
-	border-radius: 5px;
-	top: 2%;
-}
-
-.tcon-visuallyhidden:active, .tcon-visuallyhidden:focus {
-	clip: auto;
-	height: auto;
-	margin: 0;
-	overflow: visible;
-	position: static;
-	width: auto; 
-}
-.menu-respond {
-  top: 65px;
-}
-
-.site-header {
-  padding-top: 50px;
-}
-.tcon {
-  flex-wrap: wrap;
-  padding-left: 12px;
-  padding-right: 12px;
-  height: 40px;
-}
-.tcon-menu__lines {
-  display: block;
-  width: 25px;
-  height: 1.7px !important;
-  margin-bottom: 4px;
-}
-
-.tcon-menu__lines:after,
-.tcon-menu__lines:before {
-  display: none!important;
-}
-
-.tcon-menu__lines.tcon-menu__lines--half {
-  width: 12px;
-  margin-left: 13px;
-  margin-bottom: 0;
-}
-
-
-
-
-
 .sidenav {
     height: 100%;
     width: 0;
@@ -84,26 +27,30 @@
     left: 0;
     background-color: #ffffff;
     overflow-x: hidden;
-    transition: 0.5s;
     padding-top:60px;
+    box-shadow:5px 0px 7px 0px rgba(50, 50, 50, 0.42);
     li{
         list-style: none;
-        padding: .3rem 1rem .3rem 0 ;
         ul{
             padding-left: 10px;
         }
     }
     ul{
-        padding-left:45px;
+        padding:0;
+    }
+    .btn-mobile{
+        margin-top:20px;
+        width: 100%;
     }
 }
 
 .sidenav ul li a {
     text-transform: uppercase;
     font-size: 0.625rem;
-    font-family: $font-family-Montserrat;
+    font-family: $font-family-primary;
     font-weight: 500;
     letter-spacing: 2px;
+    padding: .562rem 0 .562rem 2rem;
     color:$primary-color;
     &:hover{
         color:#000000;
@@ -112,7 +59,7 @@
 
 .sidenav ul li ul li a {
     text-transform: none;
-    font-family:$font-family-Open-Sans;
+    font-family:$font-family-secondary;
     color:#000000;
 }
 
@@ -122,6 +69,7 @@
     font-size: 25px;
     color: #818181;
     transition: 0.3s;
+    display: block;
 }
 
 .sidenav a:hover {
@@ -134,14 +82,4 @@
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-}
-
-#main {
-    transition: margin-left .5s;
-    padding: 16px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
 }

@@ -1,6 +1,7 @@
 .section-items{
     h2{
         text-transform: uppercase;
+        font-size:$font-size-h2-titel-small;
     }
 }
 
@@ -12,19 +13,22 @@
     }
     h3{
         color: #000000;
-        font-size: 12px;
+        font-size: $font-size-h2-items;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 2px;
         padding-top: 28px;
+        font-family: $font-family-primary;
     }
     p{
-        color: #4a4a4a;
-        font-size: 10px;
+        color: $font-color-grey;
+        font-size: $font-size-content-small;
         line-height: 18px;
+        font-family: $font-family-secondary;
+        padding:0 28px;
     }
     
     .items-btn{
-        margin:40px 0;
+        margin:20px 0 40px;
     }
 }

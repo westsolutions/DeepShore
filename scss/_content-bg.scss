@@ -3,27 +3,29 @@
     padding:72px 0;
     background: linear-gradient(90deg, #ffffff  45%, #d02323 45.1% ,  #d02323 10000px);
     position: relative;
-    
-    img{
-        width: 50%;
-        display: block;
+    @media screen and (max-width:768px){
+        background: linear-gradient(180deg, #ffffff  45%, #d02323 45.1% ,  #d02323 100%);
     }
 }
 
 .block-text{
-    width:50%;
     padding-left: 55px;
+    @media screen and (max-width:768px){
+            padding-left:0; 
+        }
     h2{
         font-size: 20px;
         font-weight: 700;
         text-transform: uppercase;
         color:#ffffff;
         margin:27px 0;
+        font-family: $font-family-primary;
     }
     p{
         color: #ffffff;
-        font-size: 10px;
+        font-size: $font-size-content-small;
         line-height: 18px;
+        font-family: $font-family-secondary;
     }
     .block-text-btn{
         margin:22px 0;

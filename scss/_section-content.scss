@@ -3,7 +3,7 @@
     font-size: $font-size-h2-titel;
     font-weight: 400;
     margin-bottom: 1.875rem;
-    font-family: $font-family-Montserrat;
+    font-family: $font-family-primary;
     &::after{
         content:'';
         display:block;
@@ -22,7 +22,7 @@
     }
     .section-text{
         color: $font-color-grey;
-        font-family:$font-family-Open-Sans; 
+        font-family:$font-family-secondary; 
         font-size: $font-size-content;
         line-height: 1.5rem;
     }
