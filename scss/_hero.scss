@@ -6,11 +6,10 @@
     background-position: center center;
     background-size: cover;
     position: relative;
-    img{
+    .hero-deco{
         position:absolute;
-        bottom: -.375rem;
+        bottom: 0;
         width:100%;
-        min-height: 3.812rem;
     }
 }
 

@@ -1,18 +1,15 @@
-body{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-}
-@import "_variables.scss";
-@import "_header.scss";
-@import "_hero.scss";
-@import "_section-content.scss";
-@import "_icons.scss";
-@import "_content-bg.scss";
-@import "_section-items.scss";
-@import "_section-bg.scss";
-@import "_button.scss";
-@import "_menu-mobile.scss";
-@import "_footer.scss";
+@import "variables.scss";
+@import "base.scss";
+@import "header.scss";
+@import "hero.scss";
+@import "section-content.scss";
+@import "icons.scss";
+@import "content-bg.scss";
+@import "section-items.scss";
+@import "section-bg.scss";
+@import "button.scss";
+@import "menu-mobile.scss";
+@import "footer.scss";
 
 
 .section-block{
