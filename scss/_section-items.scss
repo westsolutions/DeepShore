@@ -3,10 +3,14 @@
         text-transform: uppercase;
         font-size:$font-size-h2-titel-small;
     }
+    .col-md-4{
+        padding:0 30px;
+    }
 }
 
 .items{
     margin-bottom: 55px;
+    padding-bottom: 50px;
     border: 1px solid $grey-color;
     img{
         width:100%;
@@ -25,7 +29,8 @@
         font-size: $font-size-content-small;
         line-height: 18px;
         font-family: $font-family-secondary;
-        padding:0 28px;
+        padding:0 56px 40px;
+        margin:0;
     }
     
     .items-btn{

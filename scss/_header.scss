@@ -27,6 +27,7 @@
 .header-menu{
     padding: .937rem 0;
     position: relative;
+    background-color: #ffffff;
     .container{
         max-width: 55rem;
     }
@@ -94,6 +95,9 @@
             color:#000000;
             text-transform: none;
             font-family:$font-family-secondary; 
+            &:hover{
+                color:$primary-color;
+            }
         }
     }
 }
