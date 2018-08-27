@@ -1,3 +1,4 @@
+
 footer{
     color: #ffffff;
     .name-block{
@@ -44,15 +45,7 @@ footer{
         line-height: 18px;
     }
     .footer-btn{
-        color: #ffffff;
-        font-size: 15px;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 1.6px;
-        padding:7px 40px;
-        background-color: transparent;
-        border:1px solid #ffffff;
-        border-radius: 25px;
+        padding:.625rem 43px !important;
         margin-top:23px;
         
     }
@@ -61,7 +54,7 @@ footer{
 .footer-map,
 .footer-contact,
 .footer-location{
-    min-height: 456px;
+    width:100%;
 }
     
 .footer-bottom{

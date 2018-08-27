@@ -413,7 +413,7 @@ body {
 .button-block .button i {
   color: #D02323;
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 /* line 1, ../scss/_button.scss */
@@ -441,18 +441,19 @@ body {
 .btn.btn-outline-white {
   border: 1px solid #ffffff !important;
   color: #ffffff;
+  background-color: transparent;
 }
-/* line 22, ../scss/_button.scss */
+/* line 23, ../scss/_button.scss */
 .btn.btn-outline-danger {
   border: 1px solid #ffffff !important;
   color: #ffffff;
 }
-/* line 26, ../scss/_button.scss */
+/* line 27, ../scss/_button.scss */
 .btn.btn-sm {
   font-size: 0.625rem;
   padding: 0.562rem 1rem;
 }
-/* line 30, ../scss/_button.scss */
+/* line 31, ../scss/_button.scss */
 .btn.btn-lg {
   border-radius: 10rem !important;
   padding: .625rem 1.25rem;
@@ -460,7 +461,7 @@ body {
   font-weight: 500;
   letter-spacing: 2px;
 }
-/* line 37, ../scss/_button.scss */
+/* line 38, ../scss/_button.scss */
 .btn.btn-xl {
   padding: .937rem 1.875rem;
   font-size: 1rem;
@@ -515,15 +516,19 @@ body {
 }
 /* line 38, ../scss/_menu-mobile.scss */
 .sidenav ul {
-  padding: 0;
+  padding: 0 15px;
 }
 /* line 41, ../scss/_menu-mobile.scss */
 .sidenav .btn-mobile {
   margin-top: 20px;
   width: 100%;
 }
+/* line 45, ../scss/_menu-mobile.scss */
+.sidenav .active {
+  color: #D02323;
+}
 
-/* line 47, ../scss/_menu-mobile.scss */
+/* line 50, ../scss/_menu-mobile.scss */
 .sidenav ul li a {
   text-transform: uppercase;
   font-size: 0.625rem;
@@ -533,19 +538,23 @@ body {
   padding: .562rem 0 .562rem 2rem;
   color: #D02323;
 }
-/* line 55, ../scss/_menu-mobile.scss */
+/* line 58, ../scss/_menu-mobile.scss */
 .sidenav ul li a:hover {
   color: #000000;
 }
 
-/* line 60, ../scss/_menu-mobile.scss */
+/* line 63, ../scss/_menu-mobile.scss */
 .sidenav ul li ul li a {
   text-transform: none;
   font-family: "Open Sans", sans-serif;
-  color: #000000;
+  color: #4a4a4a;
+}
+/* line 67, ../scss/_menu-mobile.scss */
+.sidenav ul li ul li a .active {
+  color: #D02323 !important;
 }
 
-/* line 66, ../scss/_menu-mobile.scss */
+/* line 72, ../scss/_menu-mobile.scss */
 .sidenav a {
   padding: 0;
   text-decoration: none !important;
@@ -555,12 +564,12 @@ body {
   display: block;
 }
 
-/* line 75, ../scss/_menu-mobile.scss */
+/* line 81, ../scss/_menu-mobile.scss */
 .sidenav a:hover {
   color: #f1f1f1;
 }
 
-/* line 79, ../scss/_menu-mobile.scss */
+/* line 85, ../scss/_menu-mobile.scss */
 .sidenav .closebtn {
   position: absolute;
   top: 0;
@@ -569,11 +578,11 @@ body {
   margin-left: 50px;
 }
 
-/* line 1, ../scss/_footer.scss */
+/* line 2, ../scss/_footer.scss */
 footer {
   color: #ffffff;
 }
-/* line 3, ../scss/_footer.scss */
+/* line 4, ../scss/_footer.scss */
 footer .name-block {
   font-size: 12px;
   font-weight: 700;
@@ -582,37 +591,37 @@ footer .name-block {
   margin-bottom: 23px !important;
 }
 
-/* line 12, ../scss/_footer.scss */
+/* line 13, ../scss/_footer.scss */
 .footer-location {
   background-color: #202020;
   padding-bottom: 32px;
 }
-/* line 15, ../scss/_footer.scss */
+/* line 16, ../scss/_footer.scss */
 .footer-location img {
   display: block;
   width: 12px;
   height: 9px;
   margin: 0 auto;
 }
-/* line 21, ../scss/_footer.scss */
+/* line 22, ../scss/_footer.scss */
 .footer-location .coordinates,
 .footer-location a {
   color: #ffffff;
   font-size: 10px;
   line-height: 18px;
 }
-/* line 26, ../scss/_footer.scss */
+/* line 27, ../scss/_footer.scss */
 .footer-location .coordinates:hover,
 .footer-location a:hover {
   color: #ffffff;
 }
 
-/* line 32, ../scss/_footer.scss */
+/* line 33, ../scss/_footer.scss */
 .footer-contact {
   background-color: #d02323;
   padding: 0 60px;
 }
-/* line 35, ../scss/_footer.scss */
+/* line 36, ../scss/_footer.scss */
 .footer-contact input,
 .footer-contact textarea {
   background-color: transparent;
@@ -624,33 +633,25 @@ footer .name-block {
   font-size: 10px;
   line-height: 18px;
 }
-/* line 46, ../scss/_footer.scss */
+/* line 47, ../scss/_footer.scss */
 .footer-contact .footer-btn {
-  color: #ffffff;
-  font-size: 15px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1.6px;
-  padding: 7px 40px;
-  background-color: transparent;
-  border: 1px solid #ffffff;
-  border-radius: 25px;
+  padding: .625rem 43px !important;
   margin-top: 23px;
 }
 
-/* line 61, ../scss/_footer.scss */
+/* line 54, ../scss/_footer.scss */
 .footer-map,
 .footer-contact,
 .footer-location {
-  min-height: 456px;
+  width: 100%;
 }
 
-/* line 67, ../scss/_footer.scss */
+/* line 60, ../scss/_footer.scss */
 .footer-bottom {
   background-color: #000000;
   padding: 10px 0;
 }
-/* line 70, ../scss/_footer.scss */
+/* line 63, ../scss/_footer.scss */
 .footer-bottom p,
 .footer-bottom a {
   font-size: 9px;
@@ -658,7 +659,7 @@ footer .name-block {
   font-weight: 700;
   margin: 0;
 }
-/* line 77, ../scss/_footer.scss */
+/* line 70, ../scss/_footer.scss */
 .footer-bottom .web {
   font-weight: 500;
   color: #ffffff;
@@ -732,99 +733,4 @@ footer .name-block {
 /* line 61, ../scss/_section-block.scss */
 .border-items {
   border-left: 1px dashed #D02323;
-}
-
-/* line 16, ../scss/style.scss */
-footer {
-  color: #ffffff;
-}
-/* line 18, ../scss/style.scss */
-footer .name-block {
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding-top: 40px;
-  margin-bottom: 23px !important;
-}
-
-/* line 27, ../scss/style.scss */
-.footer-location {
-  background-color: #202020;
-  padding-bottom: 32px;
-}
-/* line 30, ../scss/style.scss */
-.footer-location img {
-  display: block;
-  width: 12px;
-  height: 9px;
-  margin: 0 auto;
-}
-/* line 36, ../scss/style.scss */
-.footer-location .coordinates,
-.footer-location a {
-  color: #ffffff;
-  font-size: 10px;
-  line-height: 18px;
-}
-/* line 41, ../scss/style.scss */
-.footer-location .coordinates:hover,
-.footer-location a:hover {
-  color: #ffffff;
-}
-
-/* line 47, ../scss/style.scss */
-.footer-contact {
-  background-color: #d02323;
-  padding: 0 60px;
-}
-/* line 50, ../scss/style.scss */
-.footer-contact input,
-.footer-contact textarea {
-  background-color: transparent;
-  border-width: 0 0 1px 0;
-  border-bottom-style: solid;
-  border-color: #ffffff;
-  border-radius: 0;
-  color: #ffffff !important;
-  font-size: 10px;
-  line-height: 18px;
-}
-/* line 61, ../scss/style.scss */
-.footer-contact .footer-btn {
-  color: #ffffff;
-  font-size: 15px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1.6px;
-  padding: 7px 40px;
-  background-color: transparent;
-  border: 1px solid #ffffff;
-  border-radius: 25px;
-  margin-top: 23px;
-}
-
-/* line 76, ../scss/style.scss */
-.footer-map,
-.footer-contact,
-.footer-location {
-  min-height: 456px;
-}
-
-/* line 82, ../scss/style.scss */
-.footer-bottom {
-  background-color: #000000;
-  padding: 10px 0;
-}
-/* line 85, ../scss/style.scss */
-.footer-bottom p,
-.footer-bottom a {
-  font-size: 9px;
-  line-height: 15px;
-  font-weight: 700;
-  margin: 0;
-}
-/* line 92, ../scss/style.scss */
-.footer-bottom .web {
-  font-weight: 500;
-  color: #ffffff;
 }

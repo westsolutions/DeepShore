@@ -36,11 +36,14 @@
         }
     }
     ul{
-        padding:0;
+        padding:0 15px;
     }
     .btn-mobile{
         margin-top:20px;
         width: 100%;
+    }
+    .active{
+        color:$primary-color;
     }
 }
 
@@ -60,7 +63,10 @@
 .sidenav ul li ul li a {
     text-transform: none;
     font-family:$font-family-secondary;
-    color:#000000;
+    color:$font-color-grey;
+    .active{
+        color:$primary-color !important;
+    }
 }
 
 .sidenav a {
