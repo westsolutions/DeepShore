@@ -421,39 +421,42 @@ body {
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  color: #D02323;
-  border: 1px solid #D02323 !important;
   border-radius: 6rem !important;
   transition: all .3s linear;
 }
-/* line 9, ../scss/_button.scss */
+/* line 7, ../scss/_button.scss */
 .btn.btn-danger {
   background-color: #D02323;
   color: #ffffff;
 }
-/* line 12, ../scss/_button.scss */
+/* line 10, ../scss/_button.scss */
 .btn.btn-danger:hover {
   background-color: #fff;
   border-color: #D02323;
   color: #D02323;
 }
-/* line 18, ../scss/_button.scss */
+/* line 16, ../scss/_button.scss */
 .btn.btn-outline-white {
   border: 1px solid #ffffff !important;
   color: #ffffff;
   background-color: transparent;
 }
-/* line 23, ../scss/_button.scss */
-.btn.btn-outline-danger {
-  border: 1px solid #ffffff !important;
-  color: #ffffff;
+/* line 20, ../scss/_button.scss */
+.btn.btn-outline-white:hover {
+  background-color: #fff;
+  color: #D02323;
 }
-/* line 27, ../scss/_button.scss */
+/* line 25, ../scss/_button.scss */
+.btn.btn-outline-danger {
+  border: 1px solid #D02323 !important;
+  color: #D02323;
+}
+/* line 29, ../scss/_button.scss */
 .btn.btn-sm {
   font-size: 0.625rem;
   padding: 0.562rem 1rem;
 }
-/* line 31, ../scss/_button.scss */
+/* line 33, ../scss/_button.scss */
 .btn.btn-lg {
   border-radius: 10rem !important;
   padding: .625rem 1.25rem;
@@ -461,7 +464,7 @@ body {
   font-weight: 500;
   letter-spacing: 2px;
 }
-/* line 38, ../scss/_button.scss */
+/* line 40, ../scss/_button.scss */
 .btn.btn-xl {
   padding: .937rem 1.875rem;
   font-size: 1rem;
