@@ -1,7 +1,25 @@
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-}
+$(document).ready(function(){  
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
+  $('body').click(function(){
+    if ($('.js-sidenav').hasClass('is-visible')) {
+      $('.js-sidenav').removeClass('is-visible');
+    }
+  });
+
+  $('.js-sidenav').click(function(ev){
+    if (!$(ev.target).is('a')) {
+      return false;
+    }
+  });
+
+  $('.js-burger').click(function(){
+    $('.js-sidenav').addClass('is-visible');
+    return false;
+  })
+
+  $('.js-close').click(function(){
+    $('.js-sidenav').removeClass('is-visible');
+    return false;
+  });
+
+});

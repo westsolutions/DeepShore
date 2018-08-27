@@ -12,8 +12,9 @@
     }
     .hero-deco{
         position:absolute;
-        bottom: 0;
-        width:100%;
+        bottom: -1px;
+        width:calc(100% + 2px);
+        left: -1px;
     }
 }
 

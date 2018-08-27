@@ -15,8 +15,8 @@
 
   <!-- mobile menu -->
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="sidenav js-sidenav">
+        <a href="javascript:void(0)" class="closebtn js-close">&times;</a>
         <ul>
             <li>
                 <a href="#">about</a>
@@ -77,7 +77,7 @@
             <img src="img/logo.jpg" alt="">
           </a>
 
-          <button type="button" class="mobile-burger d-block d-sm-none" onclick="openNav()">
+          <button type="button" class="mobile-burger d-block d-sm-none js-burger">
             <span class="burger-bar"></span>
             <span class="burger-bar"></span>
             <span class="burger-bar"></span>
@@ -444,6 +444,10 @@
             </a>
         </div>
     </footer>
-<script src="js/js.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.js"
+  integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+  crossorigin="anonymous"></script>
+  <script src="js/js.js"></script>
 </body>
 </html>

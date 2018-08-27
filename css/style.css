@@ -142,24 +142,25 @@ body {
 /* line 13, ../scss/_hero.scss */
 .hero .hero-deco {
   position: absolute;
-  bottom: 0;
-  width: 100%;
+  bottom: -1px;
+  width: calc(100% + 2px);
+  left: -1px;
 }
 
-/* line 21, ../scss/_hero.scss */
+/* line 22, ../scss/_hero.scss */
 .hero-text .hero-sub-title {
   color: #baeaff;
   font-size: 1.375rem;
   font-weight: 300;
 }
 @media screen and (max-width: 576px) {
-  /* line 21, ../scss/_hero.scss */
+  /* line 22, ../scss/_hero.scss */
   .hero-text .hero-sub-title {
     font-size: 18px;
     line-height: normal;
   }
 }
-/* line 30, ../scss/_hero.scss */
+/* line 31, ../scss/_hero.scss */
 .hero-text .hero-title {
   text-shadow: 4px 4px 9px rgba(0, 0, 0, 0.5);
   color: #ffffff;
@@ -170,7 +171,7 @@ body {
   text-transform: uppercase;
 }
 @media screen and (max-width: 576px) {
-  /* line 30, ../scss/_hero.scss */
+  /* line 31, ../scss/_hero.scss */
   .hero-text .hero-title {
     font-size: 24px;
     line-height: normal;
@@ -499,7 +500,7 @@ body {
 /* line 21, ../scss/_menu-mobile.scss */
 .sidenav {
   height: 100%;
-  width: 0;
+  width: 250px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -508,30 +509,37 @@ body {
   overflow-x: hidden;
   padding-top: 60px;
   box-shadow: 5px 0px 7px 0px rgba(50, 50, 50, 0.42);
+  transform: translateX(-200%);
+  transition: 0.3s all;
 }
-/* line 32, ../scss/_menu-mobile.scss */
+/* line 34, ../scss/_menu-mobile.scss */
+.sidenav.is-visible {
+  transform: translateX(0);
+  box-shadow: 5px 0px 7px 0px rgba(50, 50, 50, 0.42), 0 0 0 100000px rgba(50, 50, 50, 0.5);
+}
+/* line 38, ../scss/_menu-mobile.scss */
 .sidenav li {
   list-style: none;
 }
-/* line 34, ../scss/_menu-mobile.scss */
+/* line 40, ../scss/_menu-mobile.scss */
 .sidenav li ul {
   padding-left: 10px;
 }
-/* line 38, ../scss/_menu-mobile.scss */
+/* line 44, ../scss/_menu-mobile.scss */
 .sidenav ul {
   padding: 0 15px;
 }
-/* line 41, ../scss/_menu-mobile.scss */
+/* line 47, ../scss/_menu-mobile.scss */
 .sidenav .btn-mobile {
   margin-top: 20px;
   width: 100%;
 }
-/* line 45, ../scss/_menu-mobile.scss */
+/* line 51, ../scss/_menu-mobile.scss */
 .sidenav .active {
   color: #D02323;
 }
 
-/* line 50, ../scss/_menu-mobile.scss */
+/* line 56, ../scss/_menu-mobile.scss */
 .sidenav ul li a {
   text-transform: uppercase;
   font-size: 0.625rem;
@@ -541,23 +549,23 @@ body {
   padding: .562rem 0 .562rem 2rem;
   color: #D02323;
 }
-/* line 58, ../scss/_menu-mobile.scss */
+/* line 64, ../scss/_menu-mobile.scss */
 .sidenav ul li a:hover {
   color: #000000;
 }
 
-/* line 63, ../scss/_menu-mobile.scss */
+/* line 69, ../scss/_menu-mobile.scss */
 .sidenav ul li ul li a {
   text-transform: none;
   font-family: "Open Sans", sans-serif;
   color: #4a4a4a;
 }
-/* line 67, ../scss/_menu-mobile.scss */
+/* line 73, ../scss/_menu-mobile.scss */
 .sidenav ul li ul li a .active {
   color: #D02323 !important;
 }
 
-/* line 72, ../scss/_menu-mobile.scss */
+/* line 78, ../scss/_menu-mobile.scss */
 .sidenav a {
   padding: 0;
   text-decoration: none !important;
@@ -567,18 +575,17 @@ body {
   display: block;
 }
 
-/* line 81, ../scss/_menu-mobile.scss */
+/* line 87, ../scss/_menu-mobile.scss */
 .sidenav a:hover {
   color: #f1f1f1;
 }
 
-/* line 85, ../scss/_menu-mobile.scss */
+/* line 91, ../scss/_menu-mobile.scss */
 .sidenav .closebtn {
   position: absolute;
   top: 0;
-  right: 25px;
+  right: 15px;
   font-size: 36px;
-  margin-left: 50px;
 }
 
 /* line 2, ../scss/_footer.scss */

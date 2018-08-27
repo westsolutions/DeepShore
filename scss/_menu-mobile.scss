@@ -20,7 +20,7 @@
 
 .sidenav {
     height: 100%;
-    width: 0;
+    width: 250px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -29,6 +29,12 @@
     overflow-x: hidden;
     padding-top:60px;
     box-shadow:5px 0px 7px 0px rgba(50, 50, 50, 0.42);
+    transform: translateX(-200%);
+    transition: 0.3s all;
+    &.is-visible {
+      transform: translateX(0);
+      box-shadow:5px 0px 7px 0px rgba(50, 50, 50, 0.42), 0 0 0 100000px rgba(50, 50, 50, 0.5);
+    }
     li{
         list-style: none;
         ul{
@@ -85,7 +91,6 @@
 .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
+    right: 15px;
     font-size: 36px;
-    margin-left: 50px;
 }
