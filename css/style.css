@@ -611,44 +611,50 @@ footer {
 }
 /* line 4, ../scss/_footer.scss */
 footer .name-block {
+  font-family: "Montserrat", sans-serif;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 2px;
   padding-top: 40px;
   margin-bottom: 23px !important;
 }
 
-/* line 13, ../scss/_footer.scss */
+/* line 15, ../scss/_footer.scss */
 .footer-location {
   background-color: #202020;
   padding-bottom: 32px;
 }
-/* line 16, ../scss/_footer.scss */
+/* line 18, ../scss/_footer.scss */
 .footer-location img {
   display: block;
   width: 12px;
   height: 9px;
   margin: 0 auto;
 }
-/* line 22, ../scss/_footer.scss */
+/* line 24, ../scss/_footer.scss */
 .footer-location .coordinates,
-.footer-location a {
+.footer-location a,
+.footer-location p {
   color: #ffffff;
+  font-family: "Open Sans", sans-serif;
   font-size: 10px;
   line-height: 18px;
+  text-decoration: none !important;
 }
-/* line 27, ../scss/_footer.scss */
+/* line 32, ../scss/_footer.scss */
 .footer-location .coordinates:hover,
-.footer-location a:hover {
+.footer-location a:hover,
+.footer-location p:hover {
   color: #ffffff;
 }
 
-/* line 33, ../scss/_footer.scss */
+/* line 38, ../scss/_footer.scss */
 .footer-contact {
   background-color: #d02323;
   padding: 0 60px;
 }
-/* line 36, ../scss/_footer.scss */
+/* line 41, ../scss/_footer.scss */
 .footer-contact input,
 .footer-contact textarea {
   background-color: transparent;
@@ -660,25 +666,25 @@ footer .name-block {
   font-size: 10px;
   line-height: 18px;
 }
-/* line 47, ../scss/_footer.scss */
+/* line 52, ../scss/_footer.scss */
 .footer-contact .footer-btn {
   padding: .625rem 43px !important;
   margin-top: 23px;
 }
 
-/* line 54, ../scss/_footer.scss */
+/* line 59, ../scss/_footer.scss */
 .footer-map,
 .footer-contact,
 .footer-location {
   width: 100%;
 }
 
-/* line 60, ../scss/_footer.scss */
+/* line 65, ../scss/_footer.scss */
 .footer-bottom {
   background-color: #000000;
   padding: 10px 0;
 }
-/* line 63, ../scss/_footer.scss */
+/* line 68, ../scss/_footer.scss */
 .footer-bottom p,
 .footer-bottom a {
   font-size: 9px;
@@ -686,7 +692,7 @@ footer .name-block {
   font-weight: 700;
   margin: 0;
 }
-/* line 70, ../scss/_footer.scss */
+/* line 75, ../scss/_footer.scss */
 .footer-bottom .web {
   font-weight: 500;
   color: #ffffff;

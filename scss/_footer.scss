@@ -2,16 +2,18 @@
 footer{
     color: #ffffff;
     .name-block{
-        font-size: 12px;
+        font-family: $font-family-primary;
+        font-size: $font-size-content;
         font-weight: 700;
         text-transform: uppercase;
+        letter-spacing: 2px;
         padding-top:40px;
         margin-bottom: 23px !important;
     }
 }
 
 .footer-location{
-    background-color:#202020;
+    background-color:$grey-footer-bg;
     padding-bottom: 32px;
     img{
         display: block;
@@ -20,10 +22,13 @@ footer{
         margin:0 auto;
     }
     .coordinates,
-    a{
+    a,
+    p{
         color:#ffffff;
+        font-family:$font-family-secondary; 
         font-size: 10px;
         line-height: 18px;
+        text-decoration: none !important;
         &:hover{
             color: #ffffff;
         }
