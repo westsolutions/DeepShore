@@ -5,7 +5,7 @@
     color:#ffffff;
     font-family:$font-family-primary;
     .container{
-        max-width: 55rem;
+
     }
     a{
         color:#ffffff;
@@ -28,8 +28,10 @@
     padding: .937rem 0;
     position: relative;
     background-color: #ffffff;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     .container{
-        max-width: 55rem;
+
     }
     img{
         max-width: 11.687rem;
@@ -50,7 +52,7 @@
             transition: color .5s linear;
             display: block;
             padding: .562rem 1rem ;
-            font-size: 0.625rem;
+            font-size: 0.8rem;
             font-family: $font-family-primary;
             font-weight: 500;
             letter-spacing: 2px;

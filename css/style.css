@@ -1,20 +1,51 @@
-/* line 2, ../scss/_base.scss */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+@import url("swiper.min.css");
+/* line 4, ../scss/_base.scss */
 body {
   font-size: 16px;
   overflow-x: hidden;
+}
+
+/* line 11, ../scss/_base.scss */
+.section-title {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 3.33px;
+  margin-bottom: 40px;
+}
+/* line 17, ../scss/_base.scss */
+.section-title::after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 1.875rem;
+  background-color: #f72727;
+  margin: 0 auto;
+  margin-top: .75rem;
+}
+
+/* line 28, ../scss/_base.scss */
+.gradient-bg {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#faf8f8));
+  background-image: -webkit-linear-gradient(top, #ffffff 0%, #faf8f8 100%);
+  background-image: -o-linear-gradient(top, #ffffff 0%, #faf8f8 100%);
+  background-image: linear-gradient(180deg, #ffffff 0%, #faf8f8 100%);
+}
+
+/* line 36, ../scss/_base.scss */
+.swiper-container {
+  width: 100%;
+  height: 100%;
 }
 
 /* line 1, ../scss/_header.scss */
 .header-info {
   padding: .75rem 0;
   background-color: #000000;
-  font-size: 0.5rem;
+  font-size: 0.8rem;
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
-}
-/* line 7, ../scss/_header.scss */
-.header-info .container {
-  max-width: 55rem;
 }
 /* line 10, ../scss/_header.scss */
 .header-info a {
@@ -38,27 +69,25 @@ body {
   padding: .937rem 0;
   position: relative;
   background-color: #ffffff;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
-/* line 31, ../scss/_header.scss */
-.header-menu .container {
-  max-width: 55rem;
-}
-/* line 34, ../scss/_header.scss */
+/* line 36, ../scss/_header.scss */
 .header-menu img {
   max-width: 11.687rem;
 }
 
-/* line 39, ../scss/_header.scss */
+/* line 41, ../scss/_header.scss */
 .header-menu-block {
   margin: 0;
   padding: .75rem 0;
 }
-/* line 42, ../scss/_header.scss */
+/* line 44, ../scss/_header.scss */
 .header-menu-block li {
   list-style-type: none;
   position: relative;
 }
-/* line 45, ../scss/_header.scss */
+/* line 47, ../scss/_header.scss */
 .header-menu-block li a {
   cursor: pointer;
   color: #D02323;
@@ -67,21 +96,21 @@ body {
   transition: color .5s linear;
   display: block;
   padding: 0.562rem 1rem;
-  font-size: 0.625rem;
+  font-size: 0.8rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   letter-spacing: 2px;
 }
-/* line 57, ../scss/_header.scss */
+/* line 59, ../scss/_header.scss */
 .header-menu-block li a:hover {
   color: #000000;
 }
-/* line 61, ../scss/_header.scss */
+/* line 63, ../scss/_header.scss */
 .header-menu-block li:hover .menu-sub {
   display: block;
 }
 
-/* line 67, ../scss/_header.scss */
+/* line 69, ../scss/_header.scss */
 .menu-sub {
   display: none;
   position: absolute;
@@ -92,11 +121,11 @@ body {
   z-index: 100;
   background-color: #ffffff;
 }
-/* line 76, ../scss/_header.scss */
+/* line 78, ../scss/_header.scss */
 .menu-sub li:first-of-type {
   position: relative;
 }
-/* line 78, ../scss/_header.scss */
+/* line 80, ../scss/_header.scss */
 .menu-sub li:first-of-type::before {
   content: ' ';
   width: 13.25rem;
@@ -104,24 +133,24 @@ body {
   border-top: 2px solid #D02323;
   position: absolute;
 }
-/* line 86, ../scss/_header.scss */
+/* line 88, ../scss/_header.scss */
 .menu-sub li:last-of-type {
   border: 2px solid transparent;
 }
-/* line 89, ../scss/_header.scss */
+/* line 91, ../scss/_header.scss */
 .menu-sub li {
   text-align: center;
   padding: 0;
   margin: 0 .875rem;
   border-bottom: .125rem solid #efefef;
 }
-/* line 94, ../scss/_header.scss */
+/* line 96, ../scss/_header.scss */
 .menu-sub li a {
   color: #000000;
   text-transform: none;
   font-family: "Open Sans", sans-serif;
 }
-/* line 98, ../scss/_header.scss */
+/* line 100, ../scss/_header.scss */
 .menu-sub li a:hover {
   color: #D02323;
 }
@@ -153,21 +182,27 @@ body {
   left: -1px;
 }
 
-/* line 23, ../scss/_hero.scss */
+@media screen and (min-width: 768px) {
+  /* line 22, ../scss/_hero.scss */
+  .hero-text {
+    padding-bottom: 40px;
+  }
+}
+/* line 26, ../scss/_hero.scss */
 .hero-text .hero-sub-title {
   color: #baeaff;
   font-size: 1.375rem;
-  font-weight: 300;
+  font-weight: 500;
   font-family: "Montserrat", sans-serif;
 }
 @media screen and (max-width: 576px) {
-  /* line 23, ../scss/_hero.scss */
+  /* line 26, ../scss/_hero.scss */
   .hero-text .hero-sub-title {
     font-size: 18px;
     line-height: normal;
   }
 }
-/* line 33, ../scss/_hero.scss */
+/* line 36, ../scss/_hero.scss */
 .hero-text .hero-title {
   text-shadow: 4px 4px 9px rgba(0, 0, 0, 0.5);
   color: #ffffff;
@@ -176,72 +211,83 @@ body {
   font-weight: 700;
   line-height: 3.75rem;
   text-transform: uppercase;
+  letter-spacing: 3.33px;
 }
 @media screen and (max-width: 576px) {
-  /* line 33, ../scss/_hero.scss */
+  /* line 36, ../scss/_hero.scss */
   .hero-text .hero-title {
     font-size: 24px;
     line-height: normal;
   }
 }
 
-/* line 1, ../scss/_section-content.scss */
-.section-title {
+/* line 2, ../scss/_section-content.scss */
+.content-block-wrapper .section-title {
   color: #000000;
   font-size: 32px;
   font-weight: 400;
   margin-bottom: 1.875rem;
   font-family: "Montserrat", sans-serif;
+  text-transform: none;
+  letter-spacing: normal;
 }
-/* line 7, ../scss/_section-content.scss */
-.section-title::after {
-  content: '';
-  display: block;
-  height: 1px;
-  width: 1.875rem;
-  background-color: #f72727;
-  margin: 0 auto;
-  margin-top: .75rem;
+@media screen and (max-width: 480px) {
+  /* line 2, ../scss/_section-content.scss */
+  .content-block-wrapper .section-title {
+    font-size: 24px;
+  }
 }
 
-/* line 18, ../scss/_section-content.scss */
+/* line 17, ../scss/_section-content.scss */
 .section-content {
   border-bottom: 3px dotted #dddddd;
+  padding: 40px 0 0;
 }
-/* line 20, ../scss/_section-content.scss */
-.section-content .container {
-  max-width: 45rem;
-  margin-top: 40px;
+@media screen and (max-width: 480px) {
+  /* line 17, ../scss/_section-content.scss */
+  .section-content {
+    padding: 25px 0 0;
+  }
 }
-/* line 24, ../scss/_section-content.scss */
+/* line 23, ../scss/_section-content.scss */
 .section-content .section-text {
   color: #4a4a4a;
   font-family: "Open Sans", sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5rem;
-  font-weight: bold;
+  font-weight: 400;
   margin-bottom: 50px;
 }
-/* line 32, ../scss/_section-content.scss */
+/* line 31, ../scss/_section-content.scss */
 .section-content .section-content-button {
   margin-bottom: -1.75rem;
 }
 
 /* line 1, ../scss/_icons.scss */
-.icon {
+.section-icon-blocks {
   margin-top: 1.75rem;
-  padding-top: 3.625rem;
+  padding: 25px 0;
 }
-/* line 4, ../scss/_icons.scss */
-.icon .section-title {
+@media screen and (min-width: 768px) {
+  /* line 1, ../scss/_icons.scss */
+  .section-icon-blocks {
+    padding: 3.5rem 0 3.1rem;
+  }
+}
+/* line 7, ../scss/_icons.scss */
+.section-icon-blocks .section-title {
   font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3.33px;
+  margin-bottom: 40px;
 }
 
-/* line 9, ../scss/_icons.scss */
+/* line 16, ../scss/_icons.scss */
 .icons-block {
   padding: 0 .937rem;
 }
-/* line 11, ../scss/_icons.scss */
+/* line 18, ../scss/_icons.scss */
 .icons-block .img-block {
   display: flex;
   justify-content: center;
@@ -252,7 +298,7 @@ body {
   border: 1px solid #dddddd;
   margin: 0 auto;
 }
-/* line 21, ../scss/_icons.scss */
+/* line 28, ../scss/_icons.scss */
 .icons-block h4 {
   color: #000000;
   font-size: 12px;
@@ -265,99 +311,188 @@ body {
 
 /* line 1, ../scss/_content-bg.scss */
 .content-bg {
-  margin: 50px 0;
-  padding: 72px 0;
-  background: linear-gradient(90deg, #ffffff 45%, #d02323 45.1%, #d02323 10000px);
+  padding: 35px 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(30%, #d02323), to(#d02323));
+  background: -webkit-linear-gradient(top, transparent 30%, #d02323 30%, #d02323 100%);
+  background: -o-linear-gradient(top, transparent 30%, #d02323 30%, #d02323 100%);
+  background: linear-gradient(180deg, transparent 30%, #d02323 30%, #d02323 100%);
   position: relative;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   /* line 1, ../scss/_content-bg.scss */
   .content-bg {
-    background: linear-gradient(180deg, #ffffff 45%, #d02323 45.1%, #d02323 100%);
+    padding: 20px 0;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, transparent), color-stop(20%, #d02323), to(#d02323));
+    background: -webkit-linear-gradient(top, transparent 20%, #d02323 20%, #d02323 100%);
+    background: -o-linear-gradient(top, transparent 20%, #d02323 20%, #d02323 100%);
+    background: linear-gradient(180deg, transparent 20%, #d02323 20%, #d02323 100%);
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 1, ../scss/_content-bg.scss */
+  .content-bg {
+    margin: 50px 0;
+    padding: 72px 0;
+    background: -webkit-linear-gradient(left, transparent 35%, #d02323 35.1%, #d02323 10000px);
+    background: -o-linear-gradient(left, transparent 35%, #d02323 35.1%, #d02323 10000px);
+    background: linear-gradient(90deg, transparent 35%, #d02323 35.1%, #d02323 10000px);
   }
 }
 
-/* line 11, ../scss/_content-bg.scss */
+/* line 26, ../scss/_content-bg.scss */
 .block-text {
-  padding-left: 55px;
+  padding-left: 30px;
 }
 @media screen and (max-width: 768px) {
-  /* line 11, ../scss/_content-bg.scss */
+  /* line 26, ../scss/_content-bg.scss */
   .block-text {
     padding-left: 0;
   }
 }
-/* line 16, ../scss/_content-bg.scss */
-.block-text h2 {
-  font-size: 20px;
+/* line 31, ../scss/_content-bg.scss */
+.block-text .title {
+  font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
-  margin: 27px 0;
+  margin: 20px 0;
   font-family: "Montserrat", sans-serif;
+  letter-spacing: 3.33px;
 }
-/* line 24, ../scss/_content-bg.scss */
+/* line 40, ../scss/_content-bg.scss */
 .block-text p {
   color: #ffffff;
-  font-size: 10px;
-  line-height: 18px;
+  font-size: 0.8rem;
+  line-height: 1.4rem;
   font-family: "Open Sans", sans-serif;
 }
-/* line 30, ../scss/_content-bg.scss */
+/* line 46, ../scss/_content-bg.scss */
 .block-text .block-text-btn {
-  margin: 22px 0;
+  margin: 15px 0;
 }
 
-/* line 2, ../scss/_section-items.scss */
-.section-items h2 {
-  text-transform: uppercase;
-  font-size: 24px;
+/* line 1, ../scss/_section-items.scss */
+.section-items {
+  padding: 40px 0;
 }
-/* line 6, ../scss/_section-items.scss */
-.section-items .col-md-4 {
-  padding: 0 30px;
+@media screen and (max-width: 480px) {
+  /* line 1, ../scss/_section-items.scss */
+  .section-items {
+    padding: 20px;
+  }
 }
 
-/* line 11, ../scss/_section-items.scss */
+/* line 8, ../scss/_section-items.scss */
 .items {
-  margin-bottom: 55px;
-  padding-bottom: 50px;
-  border: 1px solid #dddddd;
+  padding-bottom: 30px;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
-/* line 15, ../scss/_section-items.scss */
+@media screen and (min-width: 576px) {
+  /* line 8, ../scss/_section-items.scss */
+  .items {
+    padding-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 8, ../scss/_section-items.scss */
+  .items {
+    padding: 0 15px 55px;
+  }
+}
+/* line 26, ../scss/_section-items.scss */
+.items .content-container {
+  padding: 20px 16px 25px;
+  border: 1px solid #dddddd;
+  border-top: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  /* line 26, ../scss/_section-items.scss */
+  .items .content-container {
+    padding: 20px 20px 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* line 26, ../scss/_section-items.scss */
+  .items .content-container {
+    padding: 26px 50px 42px;
+  }
+}
+/* line 49, ../scss/_section-items.scss */
+.items .content-container .content-block {
+  margin-bottom: 20px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+@media screen and (min-width: 768px) {
+  /* line 49, ../scss/_section-items.scss */
+  .items .content-container .content-block {
+    margin-bottom: 28px;
+  }
+}
+/* line 60, ../scss/_section-items.scss */
 .items img {
   width: 100%;
 }
-/* line 18, ../scss/_section-items.scss */
-.items h3 {
+/* line 63, ../scss/_section-items.scss */
+.items .title {
   color: #000000;
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
-  padding-top: 28px;
   font-family: "Montserrat", sans-serif;
+  margin-bottom: 15px;
 }
-/* line 27, ../scss/_section-items.scss */
+/* line 73, ../scss/_section-items.scss */
 .items p {
   color: #4a4a4a;
-  font-size: 10px;
-  line-height: 18px;
+  font-size: 0.8rem;
+  line-height: 1.4rem;
   font-family: "Open Sans", sans-serif;
-  padding: 0 56px 40px;
-  margin: 0;
 }
-/* line 36, ../scss/_section-items.scss */
+/* line 80, ../scss/_section-items.scss */
 .items .items-btn {
   margin: 20px 0 40px;
 }
 
 /* line 1, ../scss/_section-bg.scss */
 .section-bg {
+  background: -webkit-linear-gradient(left, #f7f7f7 40%, #ffffff 40.01%, #ffffff 10000px);
+  background: -o-linear-gradient(left, #f7f7f7 40%, #ffffff 40.01%, #ffffff 10000px);
   background: linear-gradient(90deg, #f7f7f7 40%, #ffffff 40.01%, #ffffff 10000px);
-  padding: 72px 0;
+  padding: 25px 0;
 }
-/* line 4, ../scss/_section-bg.scss */
+@media screen and (min-width: 768px) {
+  /* line 1, ../scss/_section-bg.scss */
+  .section-bg {
+    padding: 72px 0;
+  }
+}
+/* line 9, ../scss/_section-bg.scss */
 .section-bg img {
   max-width: 104px;
   max-height: 104px;
@@ -365,51 +500,96 @@ body {
   margin-bottom: 20px;
 }
 
-/* line 13, ../scss/_section-bg.scss */
+/* line 17, ../scss/_section-bg.scss */
+.author-text {
+  padding-bottom: 20px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  /* line 17, ../scss/_section-bg.scss */
+  .author-text {
+    padding-bottom: 35px;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 17, ../scss/_section-bg.scss */
+  .author-text {
+    padding-bottom: 70px;
+  }
+}
+/* line 27, ../scss/_section-bg.scss */
 .author-text h3 {
   color: #D02323;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   letter-spacing: 2.67px;
 }
-/* line 21, ../scss/_section-bg.scss */
+/* line 35, ../scss/_section-bg.scss */
 .author-text p {
   color: #000000;
-  font-size: 32px;
-  line-height: 50px;
+  font-size: 1rem;
+  line-height: 1.8rem;
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
 }
+@media screen and (min-width: 768px) {
+  /* line 35, ../scss/_section-bg.scss */
+  .author-text p {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 35, ../scss/_section-bg.scss */
+  .author-text p {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+/* line 50, ../scss/_section-bg.scss */
+.author-text strong {
+  font-weight: 600;
+}
 
-/* line 30, ../scss/_section-bg.scss */
+/* line 55, ../scss/_section-bg.scss */
 .author-bottom {
-  border-top: 1px solid #D02323;
   position: relative;
-  margin-top: 20px;
-}
-/* line 34, ../scss/_section-bg.scss */
-.author-bottom::after {
-  content: "";
   display: block;
-  border-bottom: 1px solid #D02323;
-  width: 10000px;
-  position: absolute;
-  right: 0;
-  top: -1px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  /* line 55, ../scss/_section-bg.scss */
+  .author-bottom {
+    margin-top: 20px;
+    display: inline-block;
+    text-align: left;
+  }
 }
 
-/* line 46, ../scss/_section-bg.scss */
+/* line 67, ../scss/_section-bg.scss */
 .author-name {
   color: #000000;
-  font-size: 16px;
+  font-size: 0.8rem;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 2.67px;
   font-family: "Montserrat", sans-serif;
+  position: relative;
+  border-top: 1px solid #D02323;
+  padding-top: 8px;
 }
-/* line 53, ../scss/_section-bg.scss */
+@media screen and (min-width: 768px) {
+  /* line 67, ../scss/_section-bg.scss */
+  .author-name {
+    font-size: 1rem;
+    border-top: none;
+    padding-top: 0;
+  }
+}
+/* line 82, ../scss/_section-bg.scss */
 .author-name .data {
   font-weight: 500;
   letter-spacing: 3.56px;
@@ -418,7 +598,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-/* line 63, ../scss/_section-bg.scss */
+/* line 92, ../scss/_section-bg.scss */
 .button-block .button {
   width: 40px;
   height: 40px;
@@ -426,7 +606,7 @@ body {
   border-radius: 50%;
   margin-right: 19px;
 }
-/* line 69, ../scss/_section-bg.scss */
+/* line 98, ../scss/_section-bg.scss */
 .button-block .button i {
   color: #D02323;
   font-size: 24px;
@@ -470,8 +650,8 @@ body {
 }
 /* line 29, ../scss/_button.scss */
 .btn.btn-sm {
-  font-size: 0.625rem;
-  padding: 0.562rem 1rem;
+  font-size: 0.8rem;
+  padding: .562rem 1rem 0.45rem;
 }
 /* line 33, ../scss/_button.scss */
 .btn.btn-lg {
@@ -485,7 +665,7 @@ body {
 .btn.btn-xl {
   padding: .937rem 1.875rem;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 2.67px;
 }
 
@@ -608,31 +788,60 @@ body {
 /* line 2, ../scss/_footer.scss */
 footer {
   color: #ffffff;
+  overflow: hidden;
 }
-/* line 4, ../scss/_footer.scss */
-footer .name-block {
+
+/* line 8, ../scss/_footer.scss */
+.footer-contact-block {
+  padding: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+@media screen and (max-width: 480px) {
+  /* line 8, ../scss/_footer.scss */
+  .footer-contact-block {
+    padding: 25px 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 8, ../scss/_footer.scss */
+  .footer-contact-block {
+    padding: 60px;
+  }
+}
+/* line 25, ../scss/_footer.scss */
+.footer-contact-block .title {
   font-family: "Montserrat", sans-serif;
-  font-size: 12px;
+  font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
-  padding-top: 40px;
-  margin-bottom: 23px !important;
+  margin-bottom: 23px;
 }
 
-/* line 15, ../scss/_footer.scss */
+/* line 35, ../scss/_footer.scss */
 .footer-location {
   background-color: #202020;
-  padding-bottom: 32px;
 }
-/* line 18, ../scss/_footer.scss */
+/* line 37, ../scss/_footer.scss */
+.footer-location .title {
+  margin-bottom: 28px;
+}
+/* line 40, ../scss/_footer.scss */
 .footer-location img {
   display: block;
   width: 12px;
   height: 9px;
   margin: 0 auto;
 }
-/* line 24, ../scss/_footer.scss */
+/* line 46, ../scss/_footer.scss */
 .footer-location .coordinates,
 .footer-location a,
 .footer-location p {
@@ -642,74 +851,293 @@ footer .name-block {
   line-height: 18px;
   text-decoration: none !important;
 }
-/* line 32, ../scss/_footer.scss */
+/* line 54, ../scss/_footer.scss */
 .footer-location .coordinates:hover,
 .footer-location a:hover,
 .footer-location p:hover {
   color: #ffffff;
 }
 
-/* line 38, ../scss/_footer.scss */
+/* line 60, ../scss/_footer.scss */
 .footer-contact {
   background-color: #d02323;
-  padding: 0 60px;
+  /* form starting stylings ------------------------------- */
+  /* LABEL ======================================= */
+  /* active state */
+  /* BOTTOM BARS ================================= */
+  /* active state */
+  /* HIGHLIGHTER ================================== */
+  /* active state */
+  /* ANIMATIONS ================ */
 }
-/* line 41, ../scss/_footer.scss */
-.footer-contact input,
-.footer-contact textarea {
-  background-color: transparent;
-  border-width: 0 0 1px 0;
-  border-bottom-style: solid;
-  border-color: #ffffff;
-  border-radius: 0;
-  color: #ffffff !important;
-  font-size: 10px;
-  line-height: 18px;
+/* line 62, ../scss/_footer.scss */
+.footer-contact form {
+  width: 300px;
+  max-width: 100%;
+  margin: 0 auto;
 }
-/* line 52, ../scss/_footer.scss */
+/* line 68, ../scss/_footer.scss */
+.footer-contact .group {
+  position: relative;
+  margin-bottom: 30px;
+}
+/* line 71, ../scss/_footer.scss */
+.footer-contact .group.textarea-group {
+  margin-bottom: 15px;
+}
+/* line 75, ../scss/_footer.scss */
+.footer-contact input, .footer-contact textarea {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-size: 14px;
+}
+/* line 86, ../scss/_footer.scss */
+.footer-contact input:focus, .footer-contact textarea:focus {
+  outline: none;
+  border-color: transparent;
+}
+/* line 92, ../scss/_footer.scss */
+.footer-contact label {
+  color: #fff;
+  font-size: 14px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+/* line 108, ../scss/_footer.scss */
+.footer-contact input:focus ~ label, .footer-contact input:valid ~ label, .footer-contact textarea:focus ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #fff;
+}
+/* line 115, ../scss/_footer.scss */
+.footer-contact .has-content label {
+  top: -20px;
+  font-size: 14px;
+  color: #fff;
+}
+/* line 124, ../scss/_footer.scss */
+.footer-contact .bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+/* line 129, ../scss/_footer.scss */
+.footer-contact .bar:before, .footer-contact .bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #fff;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+/* line 140, ../scss/_footer.scss */
+.footer-contact .bar:before {
+  left: 50%;
+}
+/* line 143, ../scss/_footer.scss */
+.footer-contact .bar:after {
+  right: 50%;
+}
+/* line 148, ../scss/_footer.scss */
+.footer-contact input:focus ~ .bar:before, .footer-contact input:focus ~ .bar:after, .footer-contact textarea:focus ~ .bar:before, .footer-contact textarea:focus ~ .bar:after {
+  width: 50%;
+}
+/* line 153, ../scss/_footer.scss */
+.footer-contact .highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+/* line 164, ../scss/_footer.scss */
+.footer-contact input:focus ~ .highlight, .footer-contact textarea:focus ~ .highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
+}
+@-webkit-keyframes inputHighlighter {
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@-moz-keyframes inputHighlighter {
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@keyframes inputHighlighter {
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+/* line 198, ../scss/_footer.scss */
 .footer-contact .footer-btn {
   padding: .625rem 43px !important;
   margin-top: 23px;
 }
 
-/* line 59, ../scss/_footer.scss */
+/* line 205, ../scss/_footer.scss */
 .footer-map,
 .footer-contact,
 .footer-location {
   width: 100%;
+  height: 100%;
+}
+/* line 210, ../scss/_footer.scss */
+.footer-map .embed-responsive,
+.footer-contact .embed-responsive,
+.footer-location .embed-responsive {
+  height: 100%;
 }
 
-/* line 65, ../scss/_footer.scss */
+/* line 215, ../scss/_footer.scss */
+.footer-map {
+  height: 300px;
+}
+@media screen and (max-width: 480px) {
+  /* line 215, ../scss/_footer.scss */
+  .footer-map {
+    height: 250px;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* line 215, ../scss/_footer.scss */
+  .footer-map {
+    height: 100%;
+  }
+}
+
+/* line 225, ../scss/_footer.scss */
 .footer-bottom {
   background-color: #000000;
-  padding: 10px 0;
+  padding: 12px 0;
 }
-/* line 68, ../scss/_footer.scss */
+/* line 228, ../scss/_footer.scss */
 .footer-bottom p,
 .footer-bottom a {
-  font-size: 9px;
+  font-size: 12px;
   line-height: 15px;
   font-weight: 700;
   margin: 0;
 }
-/* line 75, ../scss/_footer.scss */
+/* line 235, ../scss/_footer.scss */
 .footer-bottom .web {
-  font-weight: 500;
+  font-weight: 400;
   color: #ffffff;
 }
 
-/* line 1, ../scss/_section-block.scss */
-.section-block {
-  max-width: 700px;
-  margin: 0 auto;
+/* line 241, ../scss/_footer.scss */
+.location-info-list {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
-/* line 4, ../scss/_section-block.scss */
-.section-block img {
-  border-bottom: 3px solid #D02323;
-  margin-bottom: 50px;
+/* line 250, ../scss/_footer.scss */
+.location-info-list ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+/* line 268, ../scss/_footer.scss */
+.location-info-list ul li {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+}
+/* line 273, ../scss/_footer.scss */
+.location-info-list ul li .icon-block {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 992px) {
+  /* line 273, ../scss/_footer.scss */
+  .location-info-list ul li .icon-block {
+    font-size: 1.5rem;
+  }
+}
+/* line 280, ../scss/_footer.scss */
+.location-info-list ul li a {
+  font-size: inherit;
+}
+/* line 283, ../scss/_footer.scss */
+.location-info-list ul li:not(:last-child) {
+  margin-bottom: 18px;
 }
 
-/* line 11, ../scss/_section-block.scss */
+/* line 1, ../scss/_section-block.scss */
+.section-hero-img {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  /* line 1, ../scss/_section-block.scss */
+  .section-hero-img {
+    margin-bottom: 45px;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* line 1, ../scss/_section-block.scss */
+  .section-hero-img {
+    margin-bottom: 60px;
+  }
+}
+/* line 9, ../scss/_section-block.scss */
+.section-hero-img img {
+  border-bottom: 3px solid #D02323;
+}
+
+/* line 15, ../scss/_section-block.scss */
+.section-block-text {
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 768px) {
+  /* line 15, ../scss/_section-block.scss */
+  .section-block-text {
+    padding-right: 40px;
+    margin-bottom: 0;
+  }
+}
+/* line 21, ../scss/_section-block.scss */
 .section-block-text h2 {
   color: #D02323;
   font-size: 32px;
@@ -717,53 +1145,193 @@ footer .name-block {
   line-height: 50px;
   font-family: "Montserrat", sans-serif;
 }
-/* line 18, ../scss/_section-block.scss */
+@media screen and (max-width: 480px) {
+  /* line 21, ../scss/_section-block.scss */
+  .section-block-text h2 {
+    font-size: 26px;
+    line-height: 1.4;
+  }
+}
+/* line 32, ../scss/_section-block.scss */
 .section-block-text p {
   color: #4a4a4a;
   font-family: "Open Sans", sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 24px;
 }
 
-/* line 26, ../scss/_section-block.scss */
+/* line 40, ../scss/_section-block.scss */
 .block-items-text {
-  padding: 0 0 30px 25px;
-  margin-left: 15px;
+  padding: 0 0 45px 34px;
   position: relative;
   min-height: 114px;
+  margin-left: 15px;
 }
-/* line 31, ../scss/_section-block.scss */
+/* line 45, ../scss/_section-block.scss */
 .block-items-text .items-number,
-.block-items-text h3 {
+.block-items-text .title {
   color: #000000;
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 3.33px;
+  margin-bottom: 14px;
 }
-/* line 41, ../scss/_section-block.scss */
+@media screen and (max-width: 480px) {
+  /* line 45, ../scss/_section-block.scss */
+  .block-items-text .items-number,
+  .block-items-text .title {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+}
+/* line 60, ../scss/_section-block.scss */
 .block-items-text .items-number {
   position: absolute;
   left: -20px;
   top: -5px;
-  width: 39px;
-  height: 39px;
+  width: 38px;
+  height: 38px;
   border: 1px solid #D02323;
   border-radius: 50%;
   text-align: center;
   background-color: #ffffff;
-  line-height: 36px;
+  letter-spacing: normal;
+  line-height: 1;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
-/* line 53, ../scss/_section-block.scss */
+/* line 86, ../scss/_section-block.scss */
 .block-items-text p {
   color: #000000;
-  font-size: 10px;
+  font-size: 0.8rem;
   line-height: 18px;
   font-family: "Open Sans", sans-serif;
 }
 
-/* line 61, ../scss/_section-block.scss */
+/* line 94, ../scss/_section-block.scss */
 .border-items {
   border-left: 1px dashed #D02323;
+}
+
+/* line 1, ../scss/_slider-testimonials.scss */
+.testimonials-slider-section {
+  overflow: hidden;
+}
+
+/* line 6, ../scss/_slider-testimonials.scss */
+.swiper-buttons-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  z-index: 3;
+  margin: 25px 0 15px;
+}
+@media screen and (min-width: 768px) {
+  /* line 6, ../scss/_slider-testimonials.scss */
+  .swiper-buttons-container {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-transform: translate(0, -100%);
+    -ms-transform: translate(0, -100%);
+    transform: translate(0, -100%);
+    position: absolute;
+    width: 60%;
+    right: 0;
+    margin: 0;
+  }
+}
+/* line 30, ../scss/_slider-testimonials.scss */
+.swiper-buttons-container .swiper-btn {
+  background-image: none;
+  width: 42px;
+  height: 42px;
+  border: 1px solid #D02323;
+  border-radius: 50%;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+/* line 42, ../scss/_slider-testimonials.scss */
+.swiper-buttons-container .swiper-btn:first-child {
+  margin-right: 20px;
+}
+/* line 45, ../scss/_slider-testimonials.scss */
+.swiper-buttons-container .swiper-btn .slider-arrow {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  background-image: url("../img/slider-arrow.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+}
+/* line 60, ../scss/_slider-testimonials.scss */
+.swiper-buttons-container .swiper-btn:focus, .swiper-buttons-container .swiper-btn:active {
+  outline: none;
+}
+/* line 64, ../scss/_slider-testimonials.scss */
+.swiper-buttons-container .swiper-btn.swiper-button-next .slider-arrow {
+  -webkit-transform: translate(-50%, -50%) rotate(180deg);
+  -ms-transform: translate(-50%, -50%) rotate(180deg);
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+
+/* line 74, ../scss/_slider-testimonials.scss */
+.slider-author-line {
+  display: none;
+  width: 40%;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  /* line 74, ../scss/_slider-testimonials.scss */
+  .slider-author-line {
+    display: block;
+  }
+}
+/* line 81, ../scss/_slider-testimonials.scss */
+.slider-author-line:before, .slider-author-line:after {
+  position: absolute;
+  content: '';
+  top: -30px;
+  height: 1px;
+  background: #D02323;
+}
+/* line 88, ../scss/_slider-testimonials.scss */
+.slider-author-line:after {
+  width: 100%;
+  left: 0;
+}
+/* line 92, ../scss/_slider-testimonials.scss */
+.slider-author-line:before {
+  width: 100vw;
+  left: -100vw;
 }

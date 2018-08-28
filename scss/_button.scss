@@ -27,8 +27,8 @@
         color:$primary-color;
     }
     &.btn-sm{
-        font-size: 0.625rem;
-        padding: .562rem 1rem ;
+        font-size: 0.8rem;
+        padding: .562rem 1rem 0.45rem;
     }
     &.btn-lg{
         border-radius: 10rem !important;
@@ -40,7 +40,7 @@
     &.btn-xl{ 
         padding: .937rem 1.875rem;
         font-size: 1rem;
-        font-weight: 500;
+        font-weight: 700;
         letter-spacing: 2.67px;
     }
 }

@@ -22,4 +22,24 @@ $(document).ready(function(){
     return false;
   });
 
+  $('body').on('change','.JS--textarea textarea',function(){
+    if ($.trim($('.JS--textarea textarea').val()).length < 1) {
+
+      $('.textarea-group').removeClass('has-content');
+
+    } else {
+      $('.textarea-group').addClass('has-content');
+
+    }
+  });
+
+
+  var swiper = new Swiper('.swiper-container.JS--testimonials-slider', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
+
 });

@@ -1,32 +1,31 @@
-.section-title{
-    color: #000000;
-    font-size: $font-size-h2-titel;
-    font-weight: 400;
-    margin-bottom: 1.875rem;
-    font-family: $font-family-primary;
-    &::after{
-        content:'';
-        display:block;
-        height:1px;
-        width:1.875rem;
-        background-color:#f72727;
-        margin:0 auto;
-        margin-top: .75rem;
+.content-block-wrapper{
+    .section-title{
+        color: #000000;
+        font-size: $font-size-h2-titel;
+        font-weight: 400;
+        margin-bottom: 1.875rem;
+        font-family: $font-family-primary;
+        text-transform: none;
+        letter-spacing: normal;
+        @media screen and (max-width: 480px){
+            font-size: 24px;
+        }
     }
 }
 
+
 .section-content{
     border-bottom: 3px dotted #dddddd;
-    .container{
-        max-width: 45rem;
-        margin-top: 40px;
+    padding: 40px 0 0;
+    @media screen and (max-width: 480px){
+        padding: 25px 0 0;
     }
     .section-text{
         color: $font-color-grey;
         font-family:$font-family-secondary; 
         font-size: $font-size-content;
         line-height: 1.5rem;
-        font-weight: bold;
+        font-weight: 400;
         margin-bottom: 50px;
     }
     .section-content-button{

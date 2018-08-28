@@ -20,10 +20,13 @@
 }
 
 .hero-text{
+    @media screen and (min-width: 768px){
+        padding-bottom: 40px;
+    }
     .hero-sub-title{
         color: #baeaff;
         font-size: 1.375rem;
-        font-weight: 300;
+        font-weight: 500;
         font-family: $font-family-primary;
         @media screen and(max-width:576px){
             font-size:$font-size-h2-titel-mobile;
@@ -38,6 +41,7 @@
         font-weight: 700;
         line-height: 3.75rem;
         text-transform: uppercase;
+        letter-spacing: 3.33px;
         @media screen and(max-width:576px){
             font-size:$font-size-h1-mobile;
             line-height: normal;
