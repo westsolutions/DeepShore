@@ -111,7 +111,7 @@
 	</section>
 
 	<section class="gradient-bg">
-	    <div class="content-bg">
+	    <div class="content-bg my-0">
 	        <div class="container">
 	            <div class="row align-items-center">
 	                <div class="col-md-6">

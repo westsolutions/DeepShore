@@ -7,7 +7,7 @@
 
 		@include("partials.header")
 
-        <div>
+        <div id="content" class="site-content">
     		@yield('content')
     	</div>
 
