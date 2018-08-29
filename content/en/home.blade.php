@@ -2,7 +2,7 @@
 
 @section('content')
 
-	@component('components.hero', ['image' => $site->asset('img/hero-bg.png') ])
+	@component('components.hero', ['image' => $site->asset('img/hero-bg.png'), 'site' => $site ])
 		<h3 class="hero-sub-title">
 			Quality Marine Construction &amp; Erosion Control Solutions
 		</h3>
