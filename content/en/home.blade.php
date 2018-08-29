@@ -177,7 +177,7 @@
 	            </div>
 	            <div class="col-sm-6 col-lg-4">
 					@component('components.card', [
-						'image' => ['src' => $site->asset('img/dock.png'), 'alt' => ''],
+						'image' => ['src' => $site->asset('img/boathouse.png'), 'alt' => ''],
 						'title' => 'Nulla pharetra'
 					])
 					<p>Sed finibus molestie sem, eu molestie ipsum imperdiet consequat. Maecenas purus velit.</p>
@@ -191,7 +191,7 @@
 	            </div>
 	            <div class="col-sm-6 col-lg-4">
 					@component('components.card', [
-						'image' => ['src' => $site->asset('img/dock.png'), 'alt' => ''],
+						'image' => ['src' => $site->asset('img/septic.png'), 'alt' => ''],
 						'title' => 'Nulla pharetra'
 					])
 					<p>Sed finibus molestie sem, eu molestie ipsum imperdiet consequat. Maecenas purus velit.</p>
@@ -205,7 +205,7 @@
 	            </div>
 	            <div class="col-sm-6 col-lg-4">
 					@component('components.card', [
-						'image' => ['src' => $site->asset('img/dock.png'), 'alt' => ''],
+						'image' => ['src' => $site->asset('img/erosion.png'), 'alt' => ''],
 						'title' => 'Nulla pharetra'
 					])
 					<p>Sed finibus molestie sem, eu molestie ipsum imperdiet consequat. Maecenas purus velit.</p>
@@ -219,7 +219,7 @@
 	            </div>
 	            <div class="col-sm-6 col-lg-4">
 					@component('components.card', [
-						'image' => ['src' => $site->asset('img/dock.png'), 'alt' => ''],
+						'image' => ['src' => $site->asset('img/landscape.png'), 'alt' => ''],
 						'title' => 'Nulla pharetra'
 					])
 					<p>Sed finibus molestie sem, eu molestie ipsum imperdiet consequat. Maecenas purus velit.</p>
@@ -233,7 +233,7 @@
 	            </div>
 	            <div class="col-sm-6 col-lg-4">
 					@component('components.card', [
-						'image' => ['src' => $site->asset('img/dock.png'), 'alt' => ''],
+						'image' => ['src' => $site->asset('img/excavation.png'), 'alt' => ''],
 						'title' => 'Nulla pharetra'
 					])
 					<p>Sed finibus molestie sem, eu molestie ipsum imperdiet consequat. Maecenas purus velit.</p>

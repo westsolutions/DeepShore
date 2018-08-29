@@ -21,7 +21,7 @@ menu:
             attributes:
                 class:
             anchor:
-                class: menu-sub
+                class:
             submenu:
                 "#":
                     text: Quisque Id
@@ -45,7 +45,8 @@ menu:
             attributes:
                 class:
             anchor:
-                class: menu-sub
+                class:
+                data-scroll-to: about
             submenu:
                 "#":
                     text: Quisque Id
@@ -57,18 +58,21 @@ menu:
                 class:
             anchor:
                 class:
+                data-scroll-to: services
         "#specialties":
             text: Specialties
             attributes:
                 class:
             anchor:
                 class:
+                data-scroll-to: specialties
         "#contact":
             text: Contact
             attributes:
                 class:
             anchor:
                 class:
+                data-scroll-to: contact
 
 social:
     facebook: https://www.facebook.com/ubiweb1/
