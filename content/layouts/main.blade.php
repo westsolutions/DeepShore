@@ -20,6 +20,7 @@
         </script>
         <script src="{{ $site->asset('js/swiper.min.js') }}"></script>
         <script src="{{ $site->asset('js/js.js') }}"></script>
+		<script src="{{ $site->asset('js/custom.js') }}"></script>
 
         @yield('foot')
 

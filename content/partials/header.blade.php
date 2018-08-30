@@ -1,6 +1,9 @@
 <div class="sidenav js-sidenav">
     <a href="javascript:void(0)" class="closebtn js-close">&times;</a>
-    <ul>
+    {!! $site->display()->menu(
+        'main'
+    ) !!}
+    {{-- <ul>
         <li>
             <a href="#">about</a>
             <ul>
@@ -27,7 +30,7 @@
         <li>
             <a href="#" class="btn btn-danger btn-sm btn-mobile">Contact</a>
         </li>
-    </ul>
+    </ul> --}}
 </div>
 <!-- mobile menu -->
 

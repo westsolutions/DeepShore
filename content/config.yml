@@ -38,9 +38,9 @@ menu:
             attributes:
                 class:
             anchor:
-                class:
+                class: btn btn-danger btn-sm btn-mobile
     onepager:
-        "#about":
+        "home#about":
             text: About
             attributes:
                 class:
@@ -52,26 +52,26 @@ menu:
                     text: Quisque Id
                     anchor:
                         class:
-        "#services":
+        "home#services":
             text: Services
             attributes:
                 class:
             anchor:
                 class:
                 data-scroll-to: services
-        "#specialties":
+        "home#specialties":
             text: Specialties
             attributes:
                 class:
             anchor:
                 class:
                 data-scroll-to: specialties
-        "#contact":
+        "home#contact":
             text: Contact
             attributes:
                 class:
             anchor:
-                class:
+                class: btn btn-danger btn-sm
                 data-scroll-to: contact
 
 social:

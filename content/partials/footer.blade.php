@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer id="contact" class="footer">
     <div class="container-fluid p-0">
         <div class="row no-gutters">
             <div class="col-sm-6 col-lg-4 order-3 order-sm-2 order-lg-1 text-center d-flex">
