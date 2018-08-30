@@ -1,5 +1,7 @@
 <div class="btn-group">
     @foreach( $site->languages('routes') as $lang => $url )
-        <a href="{{ $url }}">{{ strtoupper($lang) }}</a>
+        @if( $site->getLang() !== $lang )
+            <a href="{{ $url }}">{{ strtoupper($lang) }}</a>
+        @endif
     @endforeach
 </div>
