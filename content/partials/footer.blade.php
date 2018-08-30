@@ -90,7 +90,7 @@
         <p>
             2018 © {{ $site->global('site_title') }}
         </p>
-        <a href="#" class="web">
+        <a href="https://ubiweb.ca/" target="_blank" class="web">
             ubiweb
         </a>
     </div>
