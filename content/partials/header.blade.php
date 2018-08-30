@@ -37,13 +37,13 @@
             <div class="d-flex justify-content-between">
                 <ul class="nav">
                     <li class="nav-item d-flex">
-                        <a class="nav-link " href="tel:{{ $site->global->business->phone }}">
-                            {{ $site->global->business->phone }}
+                        <a class="nav-link " href="tel:{{ $site->global()->business->phone }}">
+                            {{ $site->global()->business->phone }}
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="mailto:{{ $site->global->business->email }}">
-                            {{ $site->global->business->email }}
+                        <a class="nav-link" href="mailto:{{ $site->global()->business->email }}">
+                            {{ $site->global()->business->email }}
                         </a>
                     </li>
                 </ul>
