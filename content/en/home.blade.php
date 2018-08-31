@@ -1,4 +1,4 @@
-@extends('layouts.onepager')
+@extends('layouts.main')
 
 @section('content')
 
@@ -51,14 +51,14 @@
 	            </h2>
 
 	            <div class="d-flex flex-md-row flex-column">
-	                <div class="icons-block flex-fill">
+	                <a class="icons-block flex-fill" href="#">
 	                    <div class="img-block">
 	                        <img src="{{ $site->asset('img/pen.svg') }}" alt="">
 	                    </div>
 	                    <h4>
 	                        Class aptent
 	                    </h4>
-	                </div>
+	                </a>
 	                <div class="icons-block flex-fill">
 	                    <div class="img-block">
 	                        <img src="{{ $site->asset('img/atom.svg') }}" alt="">
@@ -96,32 +96,18 @@
 	    </div>
 	</section>
 
-	<section class="gradient-bg">
-	    <div class="content-bg my-0">
-	        <div class="container">
-	            <div class="row align-items-center">
-					@component('components.split-screen', [
-						'reverse' => true,
-						'image' => $site->asset('img/img-content.png')
-					])
-					<h2 class="title">
-						Lorem Ipsum
-					</h2>
+	@component('components.split-screen', [
+		'reverse' => true,
+		'image' => $site->asset('img/img-content.png')
+	])
+		<h2 class="title">Lorem Ipsum</h2>
 
-					<p>
-						Ut enim neque, sagittis non nisi et, aliquet cursus ligula. Cras commodo ligula mi, at fermentum
-						est sagittis nec. Phasellus mattis lacus a tristique vulputate. Nulla posuere, ligula ac
-						suscipit rhoncus, leo justo egestas nunc, sed fringilla metus nisl porttitor ex. Fusce ac dolor
-						sit amet urna placerat pretium vel accumsan ipsum.
-					</p>
-					<a class="btn btn-lg btn-outline-white block-text-btn" href="#">
-						Learn more
-					</a>
-					@endcomponent
-	            </div>
-	        </div>
-	    </div>
-	</section>
+		<p>Ut enim neque, sagittis non nisi et, aliquet cursus ligula. Cras commodo ligula mi, at fermentum
+			est sagittis nec. Phasellus mattis lacus a tristique vulputate. Nulla posuere, ligula ac
+			suscipit rhoncus, leo justo egestas nunc, sed fringilla metus nisl porttitor ex. Fusce ac dolor
+			sit amet urna placerat pretium vel accumsan ipsum.</p>
+		<a class="btn btn-lg btn-outline-white block-text-btn" href="#">Learn more</a>
+	@endcomponent
 
 	<section id="specialties" class="section-items">
 	    <div class="container text-center">

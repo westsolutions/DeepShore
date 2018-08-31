@@ -10,25 +10,8 @@ site_description: Contractor Template
 
 menu:
     main:
-        home:
-            text: Home
-        about:
+        "about":
             text: About
-            submenu:
-                "#":
-                    text: Quisque Id
-        services:
-            text: Services
-        contact:
-            text: Contact
-            anchor:
-                class: btn btn-danger btn-sm btn-mobile
-
-    onepager:
-        "home#about":
-            text: About
-            anchor:
-                data-scroll-to: about
             submenu:
                 "#":
                     text: Quisque Id
@@ -61,10 +44,11 @@ business:
     logo: /assets/img/logo.jpg
     image: /assets/img/hero-bg.png
     description: Your local business' online partner.
-    address: 644 Courcelle St \#405|Montreal|QC|H4C 3C5
+    address: 644 Courcelle St \#405|Montreal QC H4C 3C5
     latitude: 45.4743734
     longitude: -73.5947416
     map: https://www.google.ca/maps/place/UbiWeb/@45.4743734,-73.5947416,17z/data=!4m12!1m6!3m5!1s0x4cc91098e0800695:0x4b422acd4324464d!2sUbiWeb!8m2!3d45.4743734!4d-73.5925529!3m4!1s0x4cc91098e0800695:0x4b422acd4324464d!8m2!3d45.4743734!4d-73.5925529
+    map_embed: https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11191.172325659956!2d-73.592546!3d45.473972!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4b422acd4324464d!2sUbiWeb!5e0!3m2!1sen!2sca!4v1535722526400
     hours:
       Monday: 00:00-23:59
       Tuesday: 00:00-23:59
@@ -79,3 +63,17 @@ business:
     age: 5
     email: info@ubiweb.ca
     license: RBQ 5680-0535-01
+
+testimonials:
+    -
+      image: img/author-img.png
+      heading: Testimonials
+      quote:  Lorem ipsum dolor <strong><em>sit amet,</em></strong> consectetur adipiscing elit. Aenean at erat metus nam maximus lorem id <strong><em>dui hendrerit.</em></strong>
+      author: Class taciti
+      date: May 2018
+    -
+      image: img/author-img.png
+      heading: Testimonials
+      quote:  Lorem ipsum dolor <strong><em>sit amet,</em></strong> consectetur adipiscing elit. Aenean at erat metus nam maximus lorem id <strong><em>dui hendrerit.</em></strong>
+      author: Class taciti
+      date: May 2018

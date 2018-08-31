@@ -3,12 +3,14 @@
     "require": {
         "vlucas/phpdotenv": "^2.4",
         "ubiweb/ubiweb-core": "dev-master",
-        "npm-asset/bootstrap": "dev-master"
+        "npm-asset/bootstrap": "dev-master",
+        "npm-asset/swiper": "dev-master",
+        "npm-asset/jquery": "dev-master"
     },
     "repositories": [
         {
             "type": "composer",
             "url": "https://asset-packagist.org"
         }
-    ]    
+    ]
 }

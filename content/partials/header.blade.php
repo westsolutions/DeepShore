@@ -3,34 +3,6 @@
     {!! $site->display()->menu(
         'main'
     ) !!}
-    {{-- <ul>
-        <li>
-            <a href="#">about</a>
-            <ul>
-                <li>
-                    <a href="#" class="active">Quisque Id</a>
-                </li>
-                <li>
-                    <a href="#">Tempor Libero</a>
-                </li>
-                <li>
-                    <a href="#">Vivamus Nulla</a>
-                </li>
-                <li>
-                    <a href="#">Augue</a>
-                </li>
-                <li>
-                    <a href="#">Semper</a>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <a href="#">services</a>
-        </li>
-        <li>
-            <a href="#" class="btn btn-danger btn-sm btn-mobile">Contact</a>
-        </li>
-    </ul> --}}
 </div>
 <!-- mobile menu -->
 
@@ -58,7 +30,7 @@
         <div class="container">
             <div class="d-flex justify-content-between">
                 <a href="{{ $site->url('home') }}">
-                    <img src="{{ $site->asset('img/logo.jpg') }}" alt="">
+                    <img src="{{ $site->asset('img/logo.jpg') }}" alt="{{ $site->global('site_title') }}">
                 </a>
 
                 <button type="button" class="mobile-burger d-block d-sm-none js-burger">
@@ -74,35 +46,6 @@
                         ['class' => 'header-menu-block d-flex'],
                         ['class' => 'menu-sub']
                     ) !!}
-
-                    {{-- <ul class="header-menu-block d-flex">
-                        <li>
-                            <a href="#">about</a>
-                            <ul class="menu-sub">
-                                <li>
-                                    <a href="#">Quisque Id</a>
-                                </li>
-                                <li>
-                                    <a href="#">Tempor Libero</a>
-                                </li>
-                                <li>
-                                    <a href="#">Vivamus Nulla</a>
-                                </li>
-                                <li>
-                                    <a href="#">Augue</a>
-                                </li>
-                                <li>
-                                    <a href="#">Semper</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">services</a>
-                        </li>
-                        <li>
-                            <a href="#" class="btn btn-danger btn-sm">Contact</a>
-                        </li>
-                    </ul> --}}
                 </nav>
             </div>
         </div>
