@@ -1,5 +1,5 @@
 .mobile-burger {
-    background-color: #ffffff;
+    background-color: $white;
     border: 0;
     cursor: pointer;
 }
@@ -25,7 +25,7 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #ffffff;
+    background-color: $white;
     overflow-x: hidden;
     padding-top:60px;
     box-shadow:5px 0px 7px 0px rgba(50, 50, 50, 0.42);
@@ -63,7 +63,7 @@
     padding: .562rem 0 .562rem 2rem;
     color:$primary-color;
     &:hover{
-        color:#000000;
+        color:$black;
     }
 }
 

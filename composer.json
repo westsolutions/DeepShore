@@ -3,9 +3,9 @@
     "require": {
         "vlucas/phpdotenv": "^2.4",
         "ubiweb/ubiweb-core": "dev-master",
-        "npm-asset/bootstrap": "dev-master",
         "npm-asset/swiper": "dev-master",
-        "npm-asset/jquery": "dev-master"
+        "npm-asset/jquery": "dev-master",
+        "npm-asset/bootstrap": "^4.1.3"
     },
     "repositories": [
         {

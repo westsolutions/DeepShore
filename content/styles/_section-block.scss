@@ -44,7 +44,7 @@
     margin-left: 15px;
     .items-number,
     .title{
-        color: #000000;
+        color: $black;
         font-family: $font-family-primary;
         font-size: $font-size-content-big;
         font-weight: 700;
@@ -55,7 +55,7 @@
             font-size: 18px;
             line-height: 1.4;
         }
-        
+
     }
     .items-number{
         position: absolute;
@@ -66,7 +66,7 @@
         border: 1px solid $primary-color;
         border-radius: 50%;
         text-align: center;
-        background-color: #ffffff;
+        background-color: $white;
         letter-spacing: normal;
         line-height:1;
         margin: 0;
@@ -84,10 +84,10 @@
         justify-content: center;
     }
     p{
-        color: #000000;
+        color: $black;
         font-size: $font-size-content-small;
         line-height: 18px;
-        font-family:$font-family-secondary; 
+        font-family:$font-family-secondary;
     }
 }
 

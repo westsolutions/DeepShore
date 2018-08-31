@@ -26,10 +26,10 @@ body{
 }
 
 .gradient-bg{
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#faf8f8));
-  background-image: -webkit-linear-gradient(top, #ffffff 0%, #faf8f8 100%);
-  background-image: -o-linear-gradient(top, #ffffff 0%, #faf8f8 100%);
-  background-image: linear-gradient(180deg, #ffffff 0%, #faf8f8 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from($white), to(#faf8f8));
+  background-image: -webkit-linear-gradient(top, $white 0%, #faf8f8 100%);
+  background-image: -o-linear-gradient(top, $white 0%, #faf8f8 100%);
+  background-image: linear-gradient(180deg, $white 0%, #faf8f8 100%);
 }
 
 

@@ -1,6 +1,6 @@
 .content-block-wrapper{
     .section-title{
-        color: #000000;
+        color: $black;
         font-size: $font-size-h2-titel;
         font-weight: 400;
         margin-bottom: 1.875rem;
@@ -15,14 +15,14 @@
 
 
 .section-content{
-    border-bottom: 3px dotted #dddddd;
+    border-bottom: 3px dotted $grey-color;
     padding: 40px 0 0;
     @media screen and (max-width: 480px){
         padding: 25px 0 0;
     }
     .section-text{
         color: $font-color-grey;
-        font-family:$font-family-secondary; 
+        font-family:$font-family-secondary;
         font-size: $font-size-content;
         line-height: 1.5rem;
         font-weight: 400;

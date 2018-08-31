@@ -1,5 +1,5 @@
-<section class="gradient-bg{{ $reverse ? ' gradient-bg--reverse' : null }}">
-    <div class="content-bg my-0">
+<section class="gradient-bg">
+    <div class="content-bg{{ $reverse ? ' content-bg--reverse' : null }} my-0">
         <div class="container">
             <div class="row align-items-center">
               @if( isset($reverse) && $reverse == true )
