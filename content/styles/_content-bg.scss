@@ -6,6 +6,10 @@
     background: linear-gradient(180deg, transparent  30%, $primary-color 30% ,  $primary-color 100%);
     position: relative;
 
+    &--reverse {
+        
+    }
+
     @media screen and (max-width: 480px){
         padding:20px 0;
         background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, transparent), color-stop(20%, $primary-color) ,  to($primary-color));
