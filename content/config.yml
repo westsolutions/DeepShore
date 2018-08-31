@@ -12,64 +12,36 @@ menu:
     main:
         home:
             text: Home
-            anchor:
-                class:
-            attributes:
-                class:
         about:
             text: About
-            attributes:
-                class:
-            anchor:
-                class:
             submenu:
                 "#":
                     text: Quisque Id
-                    anchor:
-                        class:
         services:
             text: Services
-            attributes:
-                class:
-            anchor:
-                class:
         contact:
             text: Contact
-            attributes:
-                class:
             anchor:
                 class: btn btn-danger btn-sm btn-mobile
+
     onepager:
         "home#about":
             text: About
-            attributes:
-                class:
             anchor:
-                class:
                 data-scroll-to: about
             submenu:
                 "#":
                     text: Quisque Id
-                    anchor:
-                        class:
         "home#services":
             text: Services
-            attributes:
-                class:
             anchor:
-                class:
                 data-scroll-to: services
         "home#specialties":
             text: Specialties
-            attributes:
-                class:
             anchor:
-                class:
                 data-scroll-to: specialties
         "home#contact":
             text: Contact
-            attributes:
-                class:
             anchor:
                 class: btn btn-danger btn-sm
                 data-scroll-to: contact

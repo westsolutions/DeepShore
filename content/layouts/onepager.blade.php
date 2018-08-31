@@ -10,34 +10,6 @@
             {!! $site->display()->menu(
                 'onepager'
             ) !!}
-            {{-- <ul>
-                <li>
-                    <a href="#">about</a>
-                    <ul>
-                        <li>
-                            <a href="#" class="active">Quisque Id</a>
-                        </li>
-                        <li>
-                            <a href="#">Tempor Libero</a>
-                        </li>
-                        <li>
-                            <a href="#">Vivamus Nulla</a>
-                        </li>
-                        <li>
-                            <a href="#">Augue</a>
-                        </li>
-                        <li>
-                            <a href="#">Semper</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">services</a>
-                </li>
-                <li>
-                    <a href="#" class="btn btn-danger btn-sm btn-mobile">Contact</a>
-                </li>
-            </ul> --}}
         </div>
         <!-- mobile menu -->
 
@@ -81,35 +53,6 @@
                                 ['class' => 'header-menu-block d-flex'],
                                 ['class' => 'menu-sub']
                             ) !!}
-
-                            {{-- <ul class="header-menu-block d-flex">
-                                <li>
-                                    <a href="#">about</a>
-                                    <ul class="menu-sub">
-                                        <li>
-                                            <a href="#">Quisque Id</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Tempor Libero</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Vivamus Nulla</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Augue</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Semper</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">services</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="btn btn-danger btn-sm">Contact</a>
-                                </li>
-                            </ul> --}}
                         </nav>
                     </div>
                 </div>
