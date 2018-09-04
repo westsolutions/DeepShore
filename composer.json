@@ -1,5 +1,27 @@
 {
+    "name": "ubiweb/template-contractor",
+    "license": "MIT",
+    "description": "New template for sites. Packed full of flexible components.",
+    "homepage": "https://github.com/ubiweb-media/template-contractor",
     "minimum-stability": "dev",
+    "authors": [
+        {
+          "name": "Greg Hunt",
+          "email": "greg@codecomment.io",
+          "homepage": "https://codecomment.io"
+        }
+    ],
+      "keywords": [
+      "ubiweb", "blade", "template"
+    ],
+      "support": {
+      "issues": "https://github.com/ubiweb-media/template-contractor/issues"
+    },
+    "config": {
+        "fxp-asset": {
+            "enabled": false
+        }
+    },
     "require": {
         "vlucas/phpdotenv": "^2.4",
         "ubiweb/ubiweb-core": "dev-master",
