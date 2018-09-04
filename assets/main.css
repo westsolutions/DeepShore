@@ -128,6 +128,25 @@ body {
     bottom: -1px;
     width: calc(100% + 2px);
     left: -1px; }
+  .hero .hero-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .hero .hero-bottom .triangle-left {
+      width: 0;
+      height: 11vh;
+      border-top: 10vh solid transparent;
+      border-right: 50vw solid #D02323;
+      border-bottom: 0 solid transparent; }
+    .hero .hero-bottom .triangle-right {
+      width: 0;
+      height: 11vh;
+      border-top: 10vh solid transparent;
+      border-left: 50vw solid #D02323;
+      border-bottom: 0 solid transparent; }
 
 @media screen and (min-width: 768px) {
   .hero-text {
