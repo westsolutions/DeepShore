@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c14747209170c740e3f505de886d59e4",
+    "content-hash": "b157de763c6f73c8ec472133bb827ca0",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -1081,6 +1081,26 @@
             ]
         },
         {
+            "name": "npm-asset/ekko-lightbox",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ashleydw/lightbox.git",
+                "reference": "32485eb832e0443db94efc5b407467c4cf330b07"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ashleydw/lightbox/zipball/32485eb832e0443db94efc5b407467c4cf330b07",
+                "reference": "32485eb832e0443db94efc5b407467c4cf330b07",
+                "shasum": null
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ],
+            "time": "2018-08-08T17:53:04+00:00"
+        },
+        {
             "name": "npm-asset/jquery",
             "version": "dev-master",
             "source": {
@@ -2099,7 +2119,8 @@
     "stability-flags": {
         "ubiweb/ubiweb-core": 20,
         "npm-asset/swiper": 20,
-        "npm-asset/jquery": 20
+        "npm-asset/jquery": 20,
+        "npm-asset/ekko-lightbox": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
