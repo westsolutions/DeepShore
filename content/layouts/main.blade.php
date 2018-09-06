@@ -13,13 +13,9 @@
 
         @include("partials.footer")
 
-        {{-- Use $site->vendor() for these scripts --}}
-        <script
-            src="https://code.jquery.com/jquery-3.3.1.slim.js"
-            integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
-            crossorigin="anonymous">
-        </script>
+        <script src="{{ $site->vendor('npm-asset/jquery/dist/jquery.min.js') }}"></script>
         <script src="{{ $site->vendor('npm-asset/swiper/dist/js/swiper.min.js') }}"></script>
+        <script src="{{ $site->vendor('npm-asset/bootstrap/dist/js/bootstrap.min.js') }}"></script>
         <script src="{{ $site->vendor('npm-asset/ekko-lightbox/dist/ekko-lightbox.min.js') }}"></script>
 
         <script src="{{ $site->asset('js/custom.js') }}"></script>
