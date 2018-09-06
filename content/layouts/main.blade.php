@@ -21,6 +21,7 @@
         </script>
         <script src="{{ $site->vendor('npm-asset/swiper/dist/js/swiper.min.js') }}"></script>
         <script src="{{ $site->vendor('npm-asset/ekko-lightbox/dist/ekko-lightbox.min.js') }}"></script>
+
         <script src="{{ $site->asset('js/custom.js') }}"></script>
 
         @yield('foot')

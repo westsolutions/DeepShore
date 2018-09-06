@@ -1,5 +1,12 @@
 $( document ).ready(function() {
 
+    $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+		event.preventDefault();
+		$(this).ekkoLightbox({
+			alwaysShowClose: true
+		});
+	});
+
   $('body').click(function(){
     if ($('.js-sidenav').hasClass('is-visible')) {
       $('.js-sidenav').removeClass('is-visible');
