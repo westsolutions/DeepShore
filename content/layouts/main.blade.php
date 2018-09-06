@@ -19,11 +19,10 @@
             integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
             crossorigin="anonymous">
         </script>
-        <script src="{{ $site->asset('js/swiper.min.js') }}"></script>
-        {{-- Use $site->vendor() for these scripts --}}
-
+        <script src="{{ $site->vendor('npm-asset/swiper/dist/js/swiper.min.js') }}"></script>
+        <script src="{{ $site->vendor('npm-asset/ekko-lightbox/dist/ekko-lightbox.min.js') }}"></script>
         <script src="{{ $site->asset('js/custom.js') }}"></script>
-        
+
         @yield('foot')
         @stack('scripts')
     </body>

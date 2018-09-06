@@ -7,7 +7,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
-@import url("css/swiper.min.css");
+@import url("../../vendor/npm-asset/swiper/dist/css/swiper.min.css");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
