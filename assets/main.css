@@ -7083,6 +7083,15 @@ body {
 @media (min-width: 1200px) {
   .grid--xl-6 {
     grid-template-columns: repeat(6, 1fr); } }
+.gallery-thumb {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer; }
+  .gallery-thumb img {
+    width: 100%;
+    height: auto; }
+
 .section-icon-blocks {
   margin-top: 1.75rem;
   padding: 25px 0; }

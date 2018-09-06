@@ -1,0 +1,11 @@
+.gallery-thumb {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
