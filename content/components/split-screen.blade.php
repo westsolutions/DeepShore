@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row align-items-center">
               @if( isset($reverse) && $reverse == true )
-                  <div class="col-md-6">
+                  <div class="col-md-6 wow animate slideInRight">
                       <img src="{{ $image }}" alt="" width="100%">
                   </div>
                   <div class="col-md-6 col-lg-5">
@@ -17,7 +17,7 @@
                           {{ $slot }}
                       </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6 wow animate slideInRight">
                       <img src="{{ $image }}" alt="" width="100%">
                   </div>
               @endif
