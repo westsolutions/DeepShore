@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "256e7afa6661b69f06686054bcbb5aa5",
+    "content-hash": "a450d5223ba601313e420d451b6ffdb1",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -694,12 +694,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "2abbb4cb1af37620675757aff06adbfcb87374c8"
+                "reference": "1acff6d904026d94538c71ce324c8a4ca8362b82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/2abbb4cb1af37620675757aff06adbfcb87374c8",
-                "reference": "2abbb4cb1af37620675757aff06adbfcb87374c8",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/1acff6d904026d94538c71ce324c8a4ca8362b82",
+                "reference": "1acff6d904026d94538c71ce324c8a4ca8362b82",
                 "shasum": ""
             },
             "require": {
@@ -745,7 +745,7 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-            "time": "2018-09-08T07:50:29+00:00"
+            "time": "2018-09-10T14:54:15+00:00"
         },
         {
             "name": "illuminate/view",
@@ -1141,6 +1141,20 @@
             "dist": {
                 "type": "tar",
                 "url": "https://registry.npmjs.org/jquery/-/jquery-3.2.1.tgz",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/popper.js",
+            "version": "1.14.4",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/popper.js/-/popper.js-1.14.4.tgz",
                 "reference": null,
                 "shasum": null
             },
