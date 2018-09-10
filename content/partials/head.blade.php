@@ -16,6 +16,7 @@
 {!! $site->display()->socialJson() !!}
 
 <link rel="stylesheet" href="{{ $site->vendor('npm-asset/ekko-lightbox/dist/ekko-lightbox.css') }}">
+<link rel="stylesheet" href="{{ $site->vendor('npm-asset/animate.css/animate.min.css') }}">
 <link rel="stylesheet" href="{{ $site->vendor('npm-asset/bootstrap/dist/css/bootstrap.min.css') }}"/>
 <link rel="stylesheet" href="{{ $site->asset('main.css') }}"/>
 

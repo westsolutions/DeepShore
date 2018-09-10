@@ -14,6 +14,7 @@
         @include("partials.footer")
 
         <script src="{{ $site->vendor('npm-asset/jquery/dist/jquery.min.js') }}"></script>
+        <script src="{{ $site->vendor('npm-asset/wow.js/dist/wow.min.js') }}"></script>
         <script src="{{ $site->vendor('npm-asset/swiper/dist/js/swiper.min.js') }}"></script>
         <script src="{{ $site->vendor('npm-asset/bootstrap/dist/js/bootstrap.min.js') }}"></script>
         <script src="{{ $site->vendor('npm-asset/ekko-lightbox/dist/ekko-lightbox.min.js') }}"></script>

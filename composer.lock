@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b157de763c6f73c8ec472133bb827ca0",
+    "content-hash": "256e7afa6661b69f06686054bcbb5aa5",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -277,12 +277,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "5c7a5c524e556113e7f8685e6880cbc4090c798d"
+                "reference": "05f9f3b9f928c7fe051382b26102b4c4e41fb61c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/5c7a5c524e556113e7f8685e6880cbc4090c798d",
-                "reference": "5c7a5c524e556113e7f8685e6880cbc4090c798d",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/05f9f3b9f928c7fe051382b26102b4c4e41fb61c",
+                "reference": "05f9f3b9f928c7fe051382b26102b4c4e41fb61c",
                 "shasum": ""
             },
             "require": {
@@ -334,7 +334,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2018-08-08T04:37:00+00:00"
+            "time": "2018-09-07T17:54:47+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -553,12 +553,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
-                "reference": "904d4f3c79d18b4f7af6bcefea41ef4ec949314a"
+                "reference": "16339a6c4b342a934df127aafc127e81fa7e5a38"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/contracts/zipball/904d4f3c79d18b4f7af6bcefea41ef4ec949314a",
-                "reference": "904d4f3c79d18b4f7af6bcefea41ef4ec949314a",
+                "url": "https://api.github.com/repos/illuminate/contracts/zipball/16339a6c4b342a934df127aafc127e81fa7e5a38",
+                "reference": "16339a6c4b342a934df127aafc127e81fa7e5a38",
                 "shasum": ""
             },
             "require": {
@@ -589,7 +589,7 @@
             ],
             "description": "The Illuminate Contracts package.",
             "homepage": "https://laravel.com",
-            "time": "2018-09-03T09:37:23+00:00"
+            "time": "2018-09-06T13:41:48+00:00"
         },
         {
             "name": "illuminate/events",
@@ -694,19 +694,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "547d8bdab6780984825fb7cf18aa55e0742c72fe"
+                "reference": "2abbb4cb1af37620675757aff06adbfcb87374c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/547d8bdab6780984825fb7cf18aa55e0742c72fe",
-                "reference": "547d8bdab6780984825fb7cf18aa55e0742c72fe",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/2abbb4cb1af37620675757aff06adbfcb87374c8",
+                "reference": "2abbb4cb1af37620675757aff06adbfcb87374c8",
                 "shasum": ""
             },
             "require": {
                 "doctrine/inflector": "^1.1",
                 "ext-mbstring": "*",
                 "illuminate/contracts": "5.8.*",
-                "nesbot/carbon": "^1.24.1",
+                "nesbot/carbon": "^1.26.3",
                 "php": "^7.1.3"
             },
             "conflict": {
@@ -714,6 +714,7 @@
             },
             "suggest": {
                 "illuminate/filesystem": "Required to use the composer class (5.8.*).",
+                "moontoast/math": "Required to use ordered UUIDs (^1.1).",
                 "ramsey/uuid": "Required to use Str::uuid() (^3.7).",
                 "symfony/process": "Required to use the composer class (^4.1).",
                 "symfony/var-dumper": "Required to use the dd function (^4.1)."
@@ -744,7 +745,7 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-            "time": "2018-08-31T09:08:52+00:00"
+            "time": "2018-09-08T07:50:29+00:00"
         },
         {
             "name": "illuminate/view",
@@ -1050,6 +1051,46 @@
             "time": "2018-02-13T20:26:39+00:00"
         },
         {
+            "name": "npm-asset/animate-sass",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tgdev/animate-sass.git",
+                "reference": "a5b094978dcd468d211ec44ca3066b262d694e32"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tgdev/animate-sass/zipball/a5b094978dcd468d211ec44ca3066b262d694e32",
+                "reference": "a5b094978dcd468d211ec44ca3066b262d694e32",
+                "shasum": null
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ],
+            "time": "2017-11-17T12:36:22+00:00"
+        },
+        {
+            "name": "npm-asset/animate.css",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/daneden/animate.css.git",
+                "reference": "6c9bd328c5b73d39e8d3498eae2a0fac819d50a7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/daneden/animate.css/zipball/6c9bd328c5b73d39e8d3498eae2a0fac819d50a7",
+                "reference": "6c9bd328c5b73d39e8d3498eae2a0fac819d50a7",
+                "shasum": null
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ],
+            "time": "2018-08-27T22:56:26+00:00"
+        },
+        {
             "name": "npm-asset/bootstrap",
             "version": "4.1.3",
             "dist": {
@@ -1082,43 +1123,31 @@
         },
         {
             "name": "npm-asset/ekko-lightbox",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ashleydw/lightbox.git",
-                "reference": "32485eb832e0443db94efc5b407467c4cf330b07"
-            },
+            "version": "5.3.0",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ashleydw/lightbox/zipball/32485eb832e0443db94efc5b407467c4cf330b07",
-                "reference": "32485eb832e0443db94efc5b407467c4cf330b07",
+                "type": "tar",
+                "url": "https://registry.npmjs.org/ekko-lightbox/-/ekko-lightbox-5.3.0.tgz",
+                "reference": null,
                 "shasum": null
             },
             "type": "npm-asset",
             "license": [
                 "MIT"
-            ],
-            "time": "2018-08-08T17:53:04+00:00"
+            ]
         },
         {
             "name": "npm-asset/jquery",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/jquery/jquery.git",
-                "reference": "f997241f0011ed728be71002bc703c7a0d3f01e5"
-            },
+            "version": "3.2.1",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/jquery/jquery/zipball/f997241f0011ed728be71002bc703c7a0d3f01e5",
-                "reference": "f997241f0011ed728be71002bc703c7a0d3f01e5",
+                "type": "tar",
+                "url": "https://registry.npmjs.org/jquery/-/jquery-3.2.1.tgz",
+                "reference": null,
                 "shasum": null
             },
             "type": "npm-asset",
             "license": [
                 "MIT"
-            ],
-            "time": "2018-08-29T13:54:27+00:00"
+            ]
         },
         {
             "name": "npm-asset/ssr-window",
@@ -1157,6 +1186,25 @@
                 "MIT"
             ],
             "time": "2018-08-20T07:42:25+00:00"
+        },
+        {
+            "name": "npm-asset/wow.js",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:graingert/WOW.git",
+                "reference": "34712a3deadd7ba24633aa8cf5a97675a1c4b56f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/graingert/WOW/zipball/34712a3deadd7ba24633aa8cf5a97675a1c4b56f",
+                "reference": "34712a3deadd7ba24633aa8cf5a97675a1c4b56f",
+                "shasum": null
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
         },
         {
             "name": "philo/laravel-blade",
@@ -1560,19 +1608,23 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/contracts.git",
-                "reference": "88efd4adc7ce3e5de778b99a8a9ba50b9bcc1782"
+                "reference": "d4240ac5965db1fb41a6604410804cae05ff8b72"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/contracts/zipball/88efd4adc7ce3e5de778b99a8a9ba50b9bcc1782",
-                "reference": "88efd4adc7ce3e5de778b99a8a9ba50b9bcc1782",
+                "url": "https://api.github.com/repos/symfony/contracts/zipball/d4240ac5965db1fb41a6604410804cae05ff8b72",
+                "reference": "d4240ac5965db1fb41a6604410804cae05ff8b72",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1.3"
             },
+            "require-dev": {
+                "psr/container": "^1.0"
+            },
             "suggest": {
-                "psr/cache": "When using the Cache contract"
+                "psr/cache": "When using the Cache contracts",
+                "psr/container": "When using the Service contracts"
             },
             "type": "library",
             "extra": {
@@ -1612,7 +1664,7 @@
                 "interoperability",
                 "standards"
             ],
-            "time": "2018-09-04T07:16:03+00:00"
+            "time": "2018-09-04T08:20:02+00:00"
         },
         {
             "name": "symfony/debug",
@@ -1620,12 +1672,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "42bdc01d6142259e6d5ea6b03f2a03e835319e81"
+                "reference": "9374383ad212676d943b3df2e181071d11582f79"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/42bdc01d6142259e6d5ea6b03f2a03e835319e81",
-                "reference": "42bdc01d6142259e6d5ea6b03f2a03e835319e81",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/9374383ad212676d943b3df2e181071d11582f79",
+                "reference": "9374383ad212676d943b3df2e181071d11582f79",
                 "shasum": ""
             },
             "require": {
@@ -1668,7 +1720,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2018-08-21T12:03:16+00:00"
+            "time": "2018-09-09T09:23:23+00:00"
         },
         {
             "name": "symfony/finder",
@@ -1676,12 +1728,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "4cf18147c61cc36e6dcad9486b34a6452c05af33"
+                "reference": "faec028be9c4992e92381850ae5751dff5edea78"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/4cf18147c61cc36e6dcad9486b34a6452c05af33",
-                "reference": "4cf18147c61cc36e6dcad9486b34a6452c05af33",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/faec028be9c4992e92381850ae5751dff5edea78",
+                "reference": "faec028be9c4992e92381850ae5751dff5edea78",
                 "shasum": ""
             },
             "require": {
@@ -1717,7 +1769,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2018-09-02T17:48:09+00:00"
+            "time": "2018-09-05T17:51:25+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -1842,12 +1894,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "1c54193a56603a3c7aaca67111907b9ba1c0d73c"
+                "reference": "b0d84febcf60561a92b588d4b9706c1c8545255c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/1c54193a56603a3c7aaca67111907b9ba1c0d73c",
-                "reference": "1c54193a56603a3c7aaca67111907b9ba1c0d73c",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/b0d84febcf60561a92b588d4b9706c1c8545255c",
+                "reference": "b0d84febcf60561a92b588d4b9706c1c8545255c",
                 "shasum": ""
             },
             "require": {
@@ -1907,7 +1959,7 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
-            "time": "2018-09-04T07:24:06+00:00"
+            "time": "2018-09-08T13:42:43+00:00"
         },
         {
             "name": "symfony/yaml",
@@ -2119,8 +2171,8 @@
     "stability-flags": {
         "ubiweb/ubiweb-core": 20,
         "npm-asset/swiper": 20,
-        "npm-asset/jquery": 20,
-        "npm-asset/ekko-lightbox": 20
+        "npm-asset/animate-sass": 20,
+        "npm-asset/animate.css": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
