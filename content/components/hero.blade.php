@@ -4,9 +4,8 @@
     		{{ $slot }}
         </div>
 	</div>
-    {{-- <div class="hero-bottom">
-        <div class="triangle-right"></div>
+    <div class="hero-bottom">
         <div class="triangle-left"></div>
-    </div> --}}
-    <img src="{{ $site->asset('img/hero-bottom.svg') }}" class="hero-deco">
+        <div class="triangle-right"></div>
+    </div>
 </div>
