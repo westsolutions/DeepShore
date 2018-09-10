@@ -6925,7 +6925,7 @@ body {
         border-bottom: 0 solid transparent;
         position: absolute;
         left: -2vw;
-        bottom: 0;
+        bottom: -1px;
         z-index: 2; }
       .hero .hero-bottom .triangle-left:after {
         display: block;
@@ -6950,7 +6950,7 @@ body {
         border-right: 52vw solid #ffffff;
         border-bottom: 0 solid transparent;
         position: absolute;
-        bottom: 0;
+        bottom: -1px;
         z-index: 2; }
       .hero .hero-bottom .triangle-right:after {
         display: block;
