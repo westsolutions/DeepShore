@@ -2,6 +2,7 @@
     text-transform: uppercase;
     font-family: $font-family-primary;
     font-weight: 700;
+    border-color: $primary-color;
     border-radius: 6rem !important;
     transition: all .3s linear;
     &.btn-danger{
