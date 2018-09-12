@@ -32,7 +32,7 @@
                 border-left: 52vw solid $white;
                 border-bottom: 0 solid transparent;
                 position: absolute;
-                left: -2vw;
+                left: -1.9vw;
                 bottom: -1px;
                 z-index: 2;
             }
@@ -64,6 +64,10 @@
                 position: absolute;
                 bottom: -1px;
                 z-index: 2;
+                @media (max-width: 767px) {
+                    border-right: 50vw solid $white!important;
+                    height: 99px;
+                }
             }
             &:after {
                 display: block;
