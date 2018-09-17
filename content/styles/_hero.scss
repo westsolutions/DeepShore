@@ -35,6 +35,10 @@
                 left: -1.9vw;
                 bottom: -1px;
                 z-index: 2;
+                @media (max-width: 767px) {
+                    border-top: 84px solid transparent!important;
+                    left: -1.8vw!important;
+                }
             }
             &:after {
                 display: block;
@@ -57,17 +61,13 @@
                 display: block;
                 content: "";
                 width: 0;
-                height: 100px;
-                border-top: 83px solid transparent;
-                border-right: 52vw solid $white;
+                height: 98px;
+                border-top: 81px solid transparent;
+                border-right: 50vw solid $white;
                 border-bottom: 0 solid transparent;
                 position: absolute;
                 bottom: -1px;
                 z-index: 2;
-                @media (max-width: 767px) {
-                    border-right: 50vw solid $white!important;
-                    height: 99px;
-                }
             }
             &:after {
                 display: block;
