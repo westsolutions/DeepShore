@@ -7005,6 +7005,9 @@ body {
   @media screen and (max-width: 480px) {
     .content-block-wrapper .section-title {
       font-size: 24px; } }
+.content-block-wrapper .btn {
+  text-align: center !important;
+  margin: 0 auto -1.75rem !important; }
 
 .section-content {
   border-bottom: 3px dotted #dddddd;
