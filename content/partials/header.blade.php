@@ -9,10 +9,10 @@
 <section class="fixed-top">
     <div class="header-info">
         <div class="container">
-            <div class="d-flex justify-content-between">
+            <div class="d-flex justify-content-between align-items-center">
                 <ul class="nav">
                     <li class="nav-item d-flex">
-                        <a class="nav-link " href="tel:{{ $site->global()->business->phone }}">
+                        <a class="nav-link" href="tel:{{ $site->global()->business->phone }}">
                             {{ $site->global()->business->phone }}
                         </a>
                     </li>
@@ -28,9 +28,9 @@
     </div>
     <header class="header-menu">
         <div class="container">
-            <div class="d-flex justify-content-between">
+            <div class="d-flex justify-content-between align-items-center">
                 <a href="{{ $site->url('home') }}">
-                    <img src="{{ $site->asset('img/logo.jpg') }}" alt="{{ $site->global('site_title') }}">
+                    <img src="{{ $site->asset('img/ubiweb-logo.png') }}" alt="{{ $site->global('site_title') }}">
                 </a>
 
                 <button type="button" class="mobile-burger d-block d-sm-none js-burger">
