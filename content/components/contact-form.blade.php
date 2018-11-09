@@ -14,13 +14,14 @@
 
 	@if( $captcha )
 	<button
-    type="submit"
-    class="g-recaptcha btn btn-lg btn-outline-white footer-btn"
-    data-sitekey="{{ env('RECAPTCHA_SITE_KEY') }}"
-    data-callback="ubiRecaptchaFormSubmission">
-    {{ $site->trans($submitText ?? 'Submit') }}</button>
-  <div data-form-response="success" class="alert alert-success" style="display:none">{{ $site->trans('Your message was sent successfully.') }}</div>
-  <div data-form-response="error" class="alert alert-danger" style="display:none">{{ $site->trans('There was an error trying to send the form. Please contact: ') }} <a href="mailto:{{ $site->global('admin_email') }}">{{ $site->global('admin_email') }}</a></div>
+	    type="submit"
+	    class="g-recaptcha btn btn-lg btn-outline-white footer-btn"
+	    data-sitekey="{{ env('RECAPTCHA_SITE_KEY') }}"
+	    data-callback="ubiRecaptchaFormSubmission">
+	    {{ $site->trans($submitText ?? 'Submit') }}
+	</button>
+    <div data-form-response="success" class="alert alert-success" style="display:none">{{ $site->trans('Your message was sent successfully.') }}</div>
+    <div data-form-response="error" class="alert alert-danger" style="display:none">{{ $site->trans('There was an error trying to send the form. Please contact: ') }} <a href="mailto:{{ $site->global('admin_email') }}">{{ $site->global('admin_email') }}</a></div>
 	@else
 	<input type="hidden" name="redirect" value="{{ $site->url()->current() }}" />
 	<button type="submit" class="btn btn-lg btn-outline-white footer-btn">{!! $site->trans($submitText ?? 'Submit') !!}</button>
