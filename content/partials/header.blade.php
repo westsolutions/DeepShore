@@ -44,7 +44,7 @@
                     {!! $site->display()->menu(
                         'main',
                         ['class' => 'header-menu-block d-flex'],
-                        ['class' => 'menu-sub']
+                        ['class' => 'list-unstyled menu-sub']
                     ) !!}
                 </nav>
             </div>
