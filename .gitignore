@@ -1,2 +1,5 @@
+/vendor/
+.DS_Store
+.env
 .sass-cache
-.idea
+tokens.txt

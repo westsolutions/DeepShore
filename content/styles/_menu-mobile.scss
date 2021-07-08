@@ -1,0 +1,97 @@
+.mobile-burger {
+    background-color: $white;
+    border: 0;
+    cursor: pointer;
+}
+
+.burger-bar {
+  display: block;
+  height: 2px;
+  margin-bottom: 4px;
+  background: $primary-color;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &.burger-bar--half {
+    width: 12px;
+    margin-left: 13px;
+  }
+}
+
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: $white;
+    overflow-x: hidden;
+    padding-top:60px;
+    box-shadow:5px 0px 7px 0px rgba(50, 50, 50, 0.42);
+    transform: translateX(-200%);
+    transition: 0.3s all;
+    z-index: 2000 !important;
+    &.is-visible {
+      transform: translateX(0);
+      box-shadow:5px 0px 7px 0px rgba(50, 50, 50, 0.42), 0 0 0 100000px rgba(50, 50, 50, 0.5);
+    }
+    li{
+        list-style: none;
+        ul{
+            padding-left: 10px;
+        }
+    }
+    ul{
+        padding:0 15px;
+    }
+    .btn-mobile{
+        margin-top:20px;
+        width: 100%;
+    }
+    .active{
+        color:$primary-color;
+    }
+}
+
+.sidenav ul li a {
+    text-transform: uppercase;
+    font-size: 0.625rem;
+    font-family: $font-family-primary;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: .562rem 0 .562rem 2rem;
+    color:$primary-color;
+    &:hover{
+        color:$black;
+    }
+}
+
+.sidenav ul li ul li a {
+    text-transform: none;
+    font-family:$font-family-secondary;
+    color:$font-color-grey;
+    .active{
+        color:$primary-color !important;
+    }
+}
+
+.sidenav a {
+    padding: 0;
+    text-decoration: none !important;
+    font-size: 25px;
+    color: $grey;
+    transition: 0.3s;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 36px;
+}

@@ -1,0 +1,42 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+@import url('../../vendor/npm-asset/swiper/dist/css/swiper.min.css');
+
+body{
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+
+
+.section-title{
+  text-transform: uppercase;
+  font-size:$font-size-h2-titel-small;
+  font-weight: 700;
+  letter-spacing: 3.33px;
+  margin-bottom: 40px;
+  &::after{
+    content:'';
+    display:block;
+    height:1px;
+    width:1.875rem;
+    background-color:$primary-color;
+    margin:0 auto;
+    margin-top: .75rem;
+  }
+}
+
+.gradient-bg{
+  background-image: -webkit-gradient(linear, left top, left bottom, from($white), to(#faf8f8));
+  background-image: -webkit-linear-gradient(top, $white 0%, #faf8f8 100%);
+  background-image: -o-linear-gradient(top, $white 0%, #faf8f8 100%);
+  background-image: linear-gradient(180deg, $white 0%, #faf8f8 100%);
+}
+
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+
+}

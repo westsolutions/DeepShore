@@ -1,0 +1,35 @@
+.content-block-wrapper{
+    .section-title{
+        color: $black;
+        font-size: $font-size-h2-titel;
+        font-weight: 400;
+        margin-bottom: 1.875rem;
+        font-family: $font-family-primary;
+        text-transform: none;
+        letter-spacing: normal;
+        @media screen and (max-width: 480px){
+            font-size: 24px;
+        }
+    }
+}
+
+
+.section-content{
+    border-bottom: 3px dotted $grey-color;
+    padding: 40px 0 0;
+    @media screen and (max-width: 480px){
+        padding: 25px 0 0;
+    }
+    .section-text{
+        color: $font-color-grey;
+        font-family:$font-family-secondary;
+        font-size: $font-size-content;
+        line-height: 1.5rem;
+        font-weight: 400;
+        margin-bottom: 50px;
+    }
+    .section-content-button{
+        text-align: center!important;
+        margin: 0 auto -1.75rem!important;
+    }
+}

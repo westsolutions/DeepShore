@@ -1,0 +1,19 @@
+.grid {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-column-gap: $spacer;
+	grid-row-gap: $spacer;
+}
+
+@for $i from 1 through 6 {
+	@each $bp, $num in $grid-breakpoints {
+		@include media-breakpoint-up($bp) {
+			.grid--#{$bp}-#{$i} {
+				grid-template-columns: repeat($i, 1fr)
+			}
+		}
+   }
+}

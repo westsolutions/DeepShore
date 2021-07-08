@@ -1,0 +1,38 @@
+.section-icon-blocks{
+    margin-top:1.75rem;
+    padding: 25px 0;
+    @media screen and (min-width: 768px){
+        padding: 3.5rem 0 3.1rem;
+    }
+    .section-title{
+        font-size:$font-size-h2-titel-small;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 3.33px;
+        margin-bottom: 40px;
+    }
+}
+
+.icons-block{
+    display: block;
+    padding: 0 .937rem;
+    .img-block{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 6.25rem;
+        width: 6.25rem;
+        border-radius: 50%;
+        border:1px solid $grey-color;
+        margin:0 auto;
+    }
+    h4{
+        color: $black;
+        font-size: $font-size-h4-icon;
+        font-weight: 700;
+        font-family: $font-family-primary;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin:1.875rem 0;
+    }
+}

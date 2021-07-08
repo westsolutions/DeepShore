@@ -1,0 +1,22 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i";
+@import "https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700";
+@import "variables.scss";
+
+// Import Bootstrap SCSS from vendor folder here
+@import "../../vendor/npm-asset/bootstrap/scss/bootstrap.scss";
+
+@import "base.scss";
+@import "header.scss";
+@import "hero.scss";
+@import "section-content.scss";
+@import "grid.scss";
+@import "gallery-thumb.scss";
+@import "icons.scss";
+@import "content-bg.scss";
+@import "section-items.scss";
+@import "section-bg.scss";
+@import "button.scss";
+@import "menu-mobile.scss";
+@import "footer.scss";
+@import "section-block.scss";
+@import "slider-testimonials.scss";

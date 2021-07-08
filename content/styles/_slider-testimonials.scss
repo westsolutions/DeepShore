@@ -1,0 +1,96 @@
+.testimonials-slider-section{
+  overflow: hidden;
+}
+
+
+.swiper-buttons-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack:center;
+  -webkit-justify-content:center;
+  -ms-flex-pack:center;
+  justify-content:center;
+  z-index: 3;
+  margin:25px 0 15px;
+  @media screen and (min-width: 768px){
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-transform: translate(0,-100%);
+    -ms-transform: translate(0,-100%);
+    transform: translate(0,-100%);
+    position: absolute;
+    width: 60%;
+    right: 0;
+    margin: 0;
+  }
+  .swiper-btn {
+    background-image: none;
+    width: 42px;
+    height: 42px;
+    border: 1px solid $primary-color;
+    border-radius: 50%;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    &:first-child{
+      margin-right: 20px;
+    }
+    .slider-arrow {
+      position: absolute;
+      content: "";
+      top:50%;
+      left:50%;
+      -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+      height: 100%;
+      width: 100%;
+      background-image: url('img/slider-arrow.svg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 16px 16px;
+    }
+    &:focus, &:active {
+      outline: none;
+    }
+    &.swiper-button-next{
+      .slider-arrow{
+        -webkit-transform: translate(-50%, -50%) rotate(180deg);
+        -ms-transform: translate(-50%, -50%) rotate(180deg);
+        transform: translate(-50%, -50%) rotate(180deg);
+      }
+    }
+  }
+}
+
+
+.slider-author-line{
+  display: none;
+  width: 40%;
+  position: relative;
+  @media screen and (min-width: 768px){
+    display: block;
+  }
+  &:before,&:after{
+      position: absolute;
+      content:'';
+      top:-30px;
+      height: 1px;
+      background:$primary-color;
+  }
+  &:after{
+    width: 100%;
+    left:0;
+  }
+  &:before{
+    width: 100vw;
+    left:-100vw;
+  }
+}

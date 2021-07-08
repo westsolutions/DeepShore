@@ -1,0 +1,54 @@
+.content-bg{
+    padding:35px 0;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(30%, $primary-color) ,  to($primary-color));
+    background: -webkit-linear-gradient(top, transparent  30%, $primary-color 30% , $primary-color 100%);
+    background: -o-linear-gradient(top, transparent  30%, $primary-color 30% ,  $primary-color 100%);
+    background: linear-gradient(180deg, transparent  30%, $primary-color 30% ,  $primary-color 100%);
+    position: relative;
+
+    &--reverse {
+        
+    }
+
+    @media screen and (max-width: 480px){
+        padding:20px 0;
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, transparent), color-stop(20%, $primary-color) ,  to($primary-color));
+        background: -webkit-linear-gradient(top, transparent  20%, $primary-color 20% ,  $primary-color 100%);
+        background: -o-linear-gradient(top, transparent  20%, $primary-color 20% ,  $primary-color 100%);
+        background: linear-gradient(180deg, transparent  20%, $primary-color 20% ,  $primary-color 100%);
+
+    }
+    @media screen and (min-width:768px){
+        margin:50px 0;
+        padding:72px 0;
+        background: -webkit-linear-gradient(left, transparent  35%, $primary-color 35.1% , $primary-color 10000px);
+        background: -o-linear-gradient(left, transparent  35%, $primary-color 35.1% , $primary-color 10000px);
+        background: linear-gradient(90deg, transparent  35%, $primary-color 35.1% , $primary-color 10000px);
+
+    }
+}
+
+.block-text{
+    padding-left: 30px;
+    @media screen and (max-width:768px){
+            padding-left:0;
+        }
+    .title{
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color:$white;
+        margin:20px 0;
+        font-family: $font-family-primary;
+        letter-spacing: 3.33px;
+    }
+    p{
+        color: $white;
+        font-size: $font-size-content-small;
+        line-height: 1.4rem;
+        font-family: $font-family-secondary;
+    }
+    .block-text-btn{
+        margin:15px 0;
+    }
+}
